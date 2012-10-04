@@ -1,5 +1,4 @@
-Statement of Intent
--------------------
+<h1>Statement of Intent</h1>
 
 <h3>Team Handle</h3>
 
