@@ -1,4 +1,4 @@
-Get Me Caffeinated!
+Statement of Intent
 ===================
 
 <h3>Team Handle</h3>
