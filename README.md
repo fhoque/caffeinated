@@ -60,10 +60,12 @@ The user will gradually be introduced to the specifics of how to make the drink 
 
 <p>The interface will also feature more in-depth options for those who already know how to brew coffee, but would like to learn how to make new types of drinks. Users will be prompted up-front to specify their level of knowledge, and the interface will scale accordingly so that both new and experienced users can find the information that interests them.</p>
 
+
 <section>
 <h1>User Profiles</h1>
 <p>[coming soon]</p>
 </section>
+
 
 <section>
 <h1>Interface Goals</h1>
