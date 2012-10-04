@@ -1,5 +1,5 @@
 Statement of Intent
-===================
+-------------------
 
 <h3>Team Handle</h3>
 
@@ -59,3 +59,33 @@ Statement of Intent
 The user will gradually be introduced to the specifics of how to make the drink best suited to their preferences and selection. These instructions will be accompanied by pictures and illustrations to increase clarity.</p>
 
 <p>The interface will also feature more in-depth options for those who already know how to brew coffee, but would like to learn how to make new types of drinks. Users will be prompted up-front to specify their level of knowledge, and the interface will scale accordingly so that both new and experienced users can find the information that interests them.</p>
+
+<section>
+<h1>User Profiles</h1>
+<p>[coming soon]</p>
+</section>
+
+<section>
+<h1>Interface Goals</h1>
+<h2>Shneiderman’s Five Criteria</h2>
+<p>The rankings for this application according to Shneiderman’s criteria are given in the table below.</p>
+<p>[insert table]</p>
+
+<h2>User Interface Goals</h2>
+<h3>Speed of Performance</h3>
+<p>The application will allow both new and advanced users to quickly find the information that is of interest to them.  To facilitate this goal, the interface will scale based on the user’s knowledge of coffee-making.  New users will be offered an in-depth tutorial on the process of brewing coffee, while advanced users will be offered a streamlined process for finding out about new coffee drinks.  These two levels of the interface will be presented as options to the user that they can choose based on their knowledge of coffee-making.</p>
+
+<h3>Time to Learn</h3>
+<p>The application will not be time consuming to learn for new users.  The interface will be straightforward and concise so that users will not have to think too much about how they should use it.  The terminology used will be appropriate to the user, and the definitions of domain-specific terms will be clearly conveyed by the interface.  The intent is that users will spend most of their time with the application learning how to make coffee rather than learning how to use the interface.</p>
+
+<h3>Subjective Satisfaction</h3>
+<p>The application will provide users with information regarding the uses, side effects, interactions and warnings related to drinking coffee. It will also update the user with new recipes. In addition, users will be presented with fun features such as step-by-step guides and games.  Last, but not least, the application will give the user some insight on the history of drinking coffee.  All of these features will be provided in order to make the application enjoyable to use in addition to being informative.</p>
+
+<h3>Avoiding User Errors</h3>
+<p>Since this application will provide options for new and advanced users, both types of users will be less likely to commit errors due to the interface not accommodating their skill level.  In addition, the interface will be simple and concise for all users in order to prevent confusion and decrease the chance of errors.  However, because the consequences of a user error in this application would be minor, this particular criteria will not be emphasized in this interface.</p>
+
+<h3>Retention over time</h3>
+<p>The simplicity of the interface, along with its step-by-step nature, will make it so that the user will not have to learn much in order to use the interface properly.  This will ensure that a repeat user will have an easy time using the interface again, because there will be less things to remember.</p>
+
+<h2>Design Features</h2>
+<p>[coming soon]</p>
