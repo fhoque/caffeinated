@@ -10,7 +10,7 @@
   <li><a href="https://github.com/razor-sharp" class="user-mention">Tarek Almiski</a></li>
 	<li><a href="https://github.com/jmcortes" class="user-mention">Joe Cortes</a></li>
 	<li><a href="https://github.com/fhoque" class="user-mention">Fatimah Hoque</a></li>
-	<li>Matthias Mohammod</li>
+	<li><a href="https://github.com/Matthias-Mohammod" class="user-mention">Matthias Mohammod</a></li>
 </ul>
 
 <h3>Project Pitch</h3>
