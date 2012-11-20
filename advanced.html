@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Advanced Questionnaire - Get Me Caffeinated!</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<style>
+#temperature, #caffeine, #sugar, #milk, #strength
+{
+	width: 300px;
+	margin: 15px;
+}
+#criteria
+{
+	position: relative;
+	float: left;
+	left: 100px;
+	width: 350px;
+}
+#drinks
+{
+	position: relative;
+	float: right;
+	right: 200px;
+	width: 400px;
+}
+</style>
+
+<script>
+var drink_list = new Array();
+var asyncRequest;
+
+function loadDrinkList()
+{
+	try
+	{
+		asyncRequest = new XMLHttpRequest();
+		asyncRequest.onreadystatechange = stateChange;
+		asyncRequest.open('GET', "drinks.json", true);
+		asyncRequest.setRequestHeader("Accept", "application/json; charset=utf-8");
+		asyncRequest.send();
+	}
+	catch(exception)
+	{
+		alert("Request Failed!");
+	}
+}
+
+function stateChange()
+{
+	if(asyncRequest.readyState == 4 && asyncRequest.status == 200)
+	{
+		var drink_list = eval('(' + asyncRequest.responseText + ')');
+	}
+}
+
+function refreshDrinkList()
+{
+	var temperature = $("#temperature").slider("value");
+	var caffeine = $("#caffeine").slider("value");
+	var sugar = $("#sugar").slider("value");
+	var milk = $("#milk").slider("value");
+	var strength = $("#strength").slider("value");
+	var data = drink_list;
+	
+	for(var i = 0; i < data.length; i++)
+	{	
+		if(data[i].temperature < temperature - 2 || data[i].temperature > temperature + 2 ||
+		   data[i].caffeine < caffeine - 2 || data[i].caffeine > caffeine + 2 ||
+		   data[i].sugar < sugar - 2 || data[i].sugar > sugar + 2 ||
+		   data[i].milk < milk - 2 || data[i].milk > milk + 2 ||
+		   data[i].strength < strength - 2 || data[i].strength > strength + 2)
+		   data.splice(i, 1);
+	}
+	
+	var content = "";
+	for(var i = 0; i < data.length; i++)
+		content += data[i].name + "<br>";
+		
+	var drink_div = document.getElementById("drinks");
+	drink_div.inner_html = content;
+	
+}
+
+$(function() {
+	$("#temperature").slider({
+		max: 10,
+		value: 5,
+		slide: refreshDrinkList,
+		change: refreshDrinkList
+	});
+	$("#caffeine").slider({
+		max: 10,
+		value: 5,
+		slide: refreshDrinkList,
+		change: refreshDrinkList
+	});
+	$("#sugar").slider({
+		max: 10,
+		value: 5,
+		slide: refreshDrinkList,
+		change: refreshDrinkList
+	});
+	$("#milk").slider({
+		max: 10,
+		value: 5,
+		slide: refreshDrinkList,
+		change: refreshDrinkList
+	});
+	$("#strength").slider({
+		max: 10,
+		value: 5,
+		slide: refreshDrinkList,
+		change: refreshDrinkList
+	});
+});
+</script>
+</head>
+<body onload="loadDrinkList();">
+<a href="index.html">Home</a> > Advanced <br>
+<h2 align="center">Advanced Questionnaire</h2>
+<div id="criteria">
+<fieldset>
+<legend>What are your drink preferences?</legend>
+Temperature:    <div id="temperature"></div><br>
+Caffeine:    <div id="caffeine"></div><br>
+Sugar:    <div id="sugar"></div><br>
+Amount of Milk:    <div id="milk"></div><br>
+Coffee Strength:    <div id="strength"></div>
+
+</fieldset>
+</div>
+
+<div id="drinks">
+<fieldset>
+<legend>Drinks that match your preferences:</legend>
+</fieldset>
+</div>
+</body>
+</html>
