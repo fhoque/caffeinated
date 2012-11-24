@@ -11,10 +11,12 @@
     $(function() {
         $( "#fundamentals" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
         $( "#fundamentals li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+		$("#terminology").accordion();
     });
     </script>
     <style>
-    .ui-tabs-vertical { width: 55em; }
+	#fundamentals { position: absolute; left: 5em; }
+    .ui-tabs-vertical { width: 60em; }
     .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
     .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; font-size: 12pt; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
     .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
@@ -34,7 +36,38 @@
 		<li><a href="#game_tab">Play A Matching Game</a></li>
 	</ul>
 	<div id="term_tab">
-		<!-- Terminology div goes here -->
+		<div id="terminology">
+			<h3>Caffeine</h3>
+			<div>
+				<p>
+				A stimulant which can temporarily ward off drowsiness and raise alertness.
+				</p>
+			</div>
+			<h3>Coffee</h3>
+			<div>
+				<p>
+				A brewed beverage which is prepared from the roasted seeds of the Coffea plant.
+				</p>
+			</div>
+			<h3>Coffee Bean</h3>
+			<div>
+				<p>
+				The seed of a coffee plant. Unprocessed coffee beans are roasted in the process of preparing coffee.
+				</p>
+			</div>
+			<h3>Coffeemaker</h3>
+			<div>
+				<p>
+				An appliance which is used to brew coffee.  This machine allows for the preparation of coffee without having to boil water in a seperate container.  Also known as a "Coffee Machine".
+				</p>
+			</div>
+			<h3>Filter</h3>
+			<div>
+				<p>
+				A utensil used in coffee brewing to remove organic components. Filters are most often made with disposable paper, but can also be made of stainless steel for brewing certain types of coffee drinks.
+				</p>
+			</div>
+		</div>
 	</div>
 	<div id="quiz_tab">
 		<!-- Quiz div goes here -->
