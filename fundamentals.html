@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Advanced Questionnaire - Get Me Caffeinated!</title>
+
+<!-- Le styles -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="bootstrap/css/docs.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+<script>
+    $(function() {
+        $( "#fundamentals" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+        $( "#fundamentals li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+		$("#terminology").accordion();
+    });
+    </script>
+    <style>
+	#fundamentals { position: absolute; left: 5em; }
+    .ui-tabs-vertical { width: 60em; }
+    .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+    .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; font-size: 12pt; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+    .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+    .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+    .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+    </style>
+
+</head>
+
+<body>
+<a href="index.html">Home</a> > Fundamentals <br>
+<h1 align="center">Fundamentals</h1>
+<div id="fundamentals">
+	<ul style="width: 15em">
+		<li><a href="#term_tab">Learn Coffee Terminology</a></li>
+		<li><a href="#quiz_tab">Test Your Coffee Knowledge</a></li>
+		<li><a href="#game_tab">Play A Matching Game</a></li>
+	</ul>
+	<div id="term_tab">
+		<div id="terminology">
+			<h3>Caffeine</h3>
+			<div>
+				<p>
+				A stimulant which can temporarily ward off drowsiness and raise alertness.
+				</p>
+			</div>
+			<h3>Coffee</h3>
+			<div>
+				<p>
+				A brewed beverage which is prepared from the roasted seeds of the Coffea plant.
+				</p>
+			</div>
+			<h3>Coffee Bean</h3>
+			<div>
+				<p>
+				The seed of a coffee plant. Unprocessed coffee beans are roasted in the process of preparing coffee.
+				</p>
+			</div>
+			<h3>Coffeemaker</h3>
+			<div>
+				<p>
+				An appliance which is used to brew coffee.  This machine allows for the preparation of coffee without having to boil water in a separate container.  Also known as a "Coffee Machine".
+				</p>
+			</div>
+			<h3>Filter</h3>
+			<div>
+				<p>
+				A utensil used in coffee brewing to remove organic components. Filters are most often made with disposable paper, but can also be made of stainless steel for brewing certain types of coffee drinks.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="quiz_tab">
+		<!-- Quiz div goes here -->
+	</div>
+	<div id="game_tab">
+		<!-- Matching game div goes here -->
+	</div>
+</div>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/application.js"></script>
+<script src="bootstrap/js/bootswatch.js"></script>
+
+</body>
+
+</html>

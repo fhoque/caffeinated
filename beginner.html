@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Get Me Caffeinated!</title>
+	
+	<!-- Le styles -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="bootstrap/css/docs.css" rel="stylesheet">
+	
+<style type="text/css">
+	#div2 {float:left; width:360px; height:375px;overflow:auto; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+	#sugar,#creamerIrish,#creamerFrench,#creamerHazelnut {width:120px; height:130px; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+	p{font-family: Verdana, Arial, Sans-Serif;}
+</style>
+<script>
+function validateForm(){
+	var ds="<table border=\"1\" align=\"top\" width=\"100%\" height=\"50%\"><tr><td colspan=2><p>Your Drink Summary:</td></tr><tr><td><b>Drink Size:</b></td><td> ";
+	for(var i=12;i<=24;i=i+4){
+		if(document.getElementById("radio"+i).checked==true)
+			 ds+=document.getElementById("radio"+i).value;
+			 }
+	 ds=ds+"</td></tr><br/><tr><td><b>Coffee:</b></td><td>";
+	for(var i=1;i<6;i++){
+		if(document.getElementById(i).checked==true)
+			 ds+=document.getElementById(i).value;
+			 }
+	 ds=ds+"</td></tr><br/><tr><td><b>Sugar:</b> </td><td>"+document.getElementById("selectSugar").value;
+	 ds=ds+"</td></tr><br/><tr><td><b>Irish Creme:</b></td><td> "+document.getElementById("selectIrish").value;
+	 ds=ds+"</td></tr><br/><tr><td><b>French Vanilla:</b></td><td> "+document.getElementById("selectFrench").value;
+	 ds=ds+"</td></tr><br/><tr><td><b>Hazelnut:</b></td><td> "+document.getElementById("selectHazelnut").value;
+	 ds=ds+"</td></tr><br/><tr><td><b>Hot/Cold:</b></td><td>";
+	 for(var i=20;i<=21;i++){
+			if(document.getElementById(i).checked==true)
+				 ds+=document.getElementById(i).value;
+				 }
+	document.getElementById("div2").innerHTML=ds+"</td></tr></b></p></table<br/><a href=\"beginner.html\">START</a>";
+	
+	
+	return false;
+}
+</script>
+
+</head>
+<body>
+<a href="index.html">Home</a> > Beginners <br>
+<h1 align="center">Beginner's Questionnaire</h1>
+<form action="" onsubmit="return validateForm()">
+	<table border="1" align="center">
+		<caption></caption>
+			<tr>
+				<td colspan=2 align="justify">
+					<h3> Drink Size:<br/>
+					<input type="radio" name="dsize" id="radio12" value="12-oz"/>   12-oz  <br/>
+					<input type="radio" name="dsize" id="radio16" checked="checked" value="16-oz"/>    16-oz <br/>
+					<input type="radio" name="dsize" id="radio20" value="20-oz"/>   20-oz <br/>
+					<input type="radio" name="dsize" id="radio24" value="24-oz"/>    24-oz <br/></h3>
+				</td>
+				<td colspan=2 align="justify">
+					<h3>Coffee:	<br/>
+					<input type="radio" name="coffee" id="1" checked="checked" value="Regular"/>   Regular  <br/>
+					<input type="radio" name="coffee" id="2" value="Dark Mount"/>   Dark Mount <br/>
+					<input type="radio" name="coffee" id="3" value="Colombian"/>   Colombian <br/>
+					<input type="radio" name="coffee" id="4" value="Hazelnut"/>   Hazelnut <br/>	
+					<input type="radio" name="coffee" id="5" value="Espresso"/>   Espresso <br/></h3>		
+				</td>
+				
+				 <td rowspan="3">
+				 
+			<div id="div2">		
+					<h3><font color="brown">CAFFEINE</font></h3>
+					<p><b><span class="app-exclude">Stimulant:</span> Naturally occurring in coffee, tea, cocoa, 
+					coffee-flavored yogurt and frozen desserts. Additive in soft drinks, energy drinks, chewing gum, 
+					and waters.</b>
+					</p>
+					<p class="teaser"><font color="blue">Stimulant</font>
+					</p>
+					<p>Caffeine is the only drug that is present 
+					naturally or added to widely consumed foods (quinine is the other drug used in foods). It is mildly 
+					addictive, one possible reason that makers of soft drinks add it to their products. Many coffee 
+					drinkers experience withdrawal symptoms, such as headaches, irritability, sleepiness, and lethargy, 
+					when they stop drinking coffee.
+					</p>
+					<p>Because caffeine increases the risk of miscarriages 
+					(and possibly birth defects) and inhibits fetal growth, it should be avoided by women who are pregnant 
+					or considering becoming pregnant. It also may make it harder to get pregnant.
+					</p>
+					<p>Caffeine also keeps 
+					many people from sleeping, causes jitteriness, and affects calcium metabolism. However, on the positive side, 
+					drinking a couple of mugs cups per day of regular (but not decaf) coffee appears to reduce the risk of 
+					Parkinson's disease, Alzheimer's disease, gallstones, and even suicide. It also can relieve headache pain, 
+					increases endurance, such as on a treadmill, and improves alertness.
+					<p>The <a href="http://www.cspinet.org/reports/caffeine.pdf">caffeine</a> 
+					in a standard cup or two of coffee is harmless to most people. But be aware that a middle-size (16 oz.) 
+					cup of regular coffee at popular coffeehouses contains 300 or more milligrams of caffeine. That is equivalent 
+					to three old-fashioned 5-ounce-cups' worth of caffeine. A 12-oz. can of Coca-Cola or most other caffeinated soft 
+					drinks contains about 35 to 40 milligrams; energy drinks typically contain much more. If you drink more than a couple 
+					of cups of coffee or several cans of caffeine-containing soda per day and experience insomnia or jitters, are at risk 
+					of osteoporosis, or are pregnant, you should rethink your habit.
+					</p>	
+						
+				 <table border="1" align="center">
+		           
+		            <tr>
+		              <th id="table_coffees">Coffees</th>
+		              <th valign="bottom">Serving Size</th>
+		              <th valign="bottom">Caffeine (mg)</th>
+		            </tr>
+		           
+		            <tr>            
+		              <td>Coffee, generic brewed</td>
+		              <td>8 oz.</td>
+		              <td>133 (range: 102-200) (16 oz. = 266)</td>
+		            </tr>
+		             <tr>
+		              <td>Coffee, generic instant</td>
+		              <td>8 oz.</td>
+		              <td>93 (range: 27-173)</td>
+		            </tr>
+		            <tr>
+		              <td>Coffee, generic decaffeinated </td>
+		              <td>8 oz.</td>
+		              <td>5 (range: 3-12)</td>
+		            </tr>
+		            <tr>
+		              <td>Starbucks Brewed Coffee (Grande)</td>
+		              <td>16 oz.</td>
+		              <td>320</td>
+		            </tr>
+		            <tr>
+		              <td>Einstein Bros. regular coffee</td>
+		              <td>16 oz.</td>
+		              <td>300</td>
+		            </tr>
+		            <tr>
+		              <td>Dunkin' Donuts regular coffee</td>
+		              <td>16 oz.</td>
+		              <td>206</td>
+		            </tr>
+		            <tr>
+		              <td>Starbucks Vanilla Latte (Grande)</td>
+		              <td>16 oz.</td>
+		              <td>150</td>
+		            </tr>
+		           
+		            <tr>
+		              <td>Starbucks Espresso, doppio</td>
+		              <td>2 oz.</td>
+		              <td>150</td>
+		            </tr>
+		            <tr>
+		              <td>Starbucks Frappuccino Blended Coffee Beverages, average</td>
+		              <td>9.5 oz.</td>
+		              <td>115</td>
+		            </tr>
+		            <tr>
+		              <td>Starbucks Espresso, solo</td>
+		              <td>1 oz.</td>
+		              <td>75</td>
+		            </tr>
+		            <tr>
+		              <td>Einstein Bros. Espresso</td>
+		              <td>1 oz.</td>
+		              <td>75</td>
+		            </tr>
+		            <tr>
+		              <td>Espresso, generic</td>
+		              <td>1 oz.</td>
+		              <td>40 (range: 30-90)</td>
+		            </tr>
+		            <tr>
+		              <td>Starbucks Espresso decaffeinated</td>
+		              <td>1 oz.</td>
+		              <td>4</td>
+		            </tr>
+		            <tr>
+		            <td colspan=3>
+		            source:<a href="http://www.cspinet.org/new/cafchart.htm">http://www.cspinet.org/new/cafchart.htm</a>
+		            </td>
+		            </tr>
+		    </table>
+		</div>
+					
+				</td>
+				 
+			</tr> 
+		
+					<tr> 
+						<td>
+						  <div id="sugar">
+						 <img src="images/sugar.png" id="sugarr" >
+						 <select name="selectSugar" id="selectSugar">
+								<option value="No Sugar">-----SUGAR-----</option>
+								<option value="1 Tea Spoon">1 Tea Spoon </option>
+								<option value="2 Tea Spoons">2 Tea Spoons</option>
+								<option value="3 Tea Spoons">3 Tea Spoons</option>
+								<option value="4 Tea Spoons">4 Tea Spoons</option>
+								<option value="5 Tea Spoons">5 Tea Spoons</option>
+								<option value="6 Tea Spoons">6 Tea Spoons</option>
+						</select>
+						  </div>
+						  </td>
+						  
+						  <td>
+						  <div id="creamerIrish">
+						  <img src="images/irish.jpg" id="irish" >
+						   <select name="selectIrish" id="selectIrish">
+								<option value="No">-IRISH CREME-</option>
+								<option value="1">1 each </option>
+								<option value="2">2 each</option>
+								<option value="3">3 each</option>
+								<option value="4">4 each</option>
+								<option value="5">5 each</option>
+								<option value="6">6 each</option>
+						</select>
+						  </div>
+						  </td>
+						  
+						  <td>				  
+						  <div id="creamerFrench">
+						  <img src="images/french.png" id="french" >
+						  <select name="selectFrench" id="selectFrench">
+								<option value="No">FRENCH VANILLA</option>
+								<option value="1">1 each </option>
+								<option value="2">2 each</option>
+								<option value="3">3 each</option>
+								<option value="4">4 each</option>
+								<option value="5">5 each</option>
+								<option value="6">6 each</option>
+						</select>
+						  </div>
+						  </td>
+						  
+						  <td>				  
+						  <div id="creamerHazelnut">
+						  <img src="images/hazelnut.png" id="hazelnut" >
+						  <select name="selectHazelnut" id="selectHazelnut">
+								<option value="No">----HAZELNUT----</option>
+								<option value="1">1 each </option>
+								<option value="2">2 each</option>
+								<option value="3">3 each</option>
+								<option value="4">4 each</option>
+								<option value="5">5 each</option>
+								<option value="6">6 each</option>
+						</select>
+						  </div>
+						  </td>
+						 
+					</tr>
+		<tr>
+			<td colspan="4" align="justify">
+				<h3> How do you like your drink?<br/>
+				<input type="radio" name="HotCold" id="20" checked="checked" value="Hot"/>    Hot <br/>
+				<input type="radio" name="HotCold" id="21" value="Cold"/>    Cold</h3>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="5" align="center">
+				<input type="submit" value="Continue">
+			</td>
+		</tr>
+	</table>
+</form>	
+	<table align="center"><tr><td><a href="beginner.html"><input type="button" value="<<-Back to Main Menu" style="color: SaddleBrown;position:absolute; size:180; height:56px; width: 400px; line-height: normal; font-style: italic; font-size: xx-large; background-color: White; text-decoration: blink; font-family: Verdana, Arial, Sans-Serif"/></a>	
+</td></tr></table>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/application.js"></script>
+<script src="bootstrap/js/bootswatch.js"></script>
+
+</body>
+
+</html>

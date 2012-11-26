@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$(".fundamentals").click(function(){
-		document.location.href='screens/fundamentals.html';
+		document.location.href='fundamentals.html';
 	}).hover(function(){
 			$("#imgHolder img").fadeOut(function() { 
 			  $(this).load(function() { $(this).fadeIn(); }); 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	);
 	
 	$(".beginner").click(function(){
-		document.location.href='screens/beginner.html';
+		document.location.href='beginner.html';
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 	);
 		
 	$(".advanced").click(function(){
-		document.location.href='screens/advanced.html';
+		document.location.href='advanced.html';
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
