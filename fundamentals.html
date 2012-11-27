@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Advanced Questionnaire - Get Me Caffeinated!</title>
 
 <!-- Le styles -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -10,10 +9,83 @@
 <link href="bootstrap/css/docs.css" rel="stylesheet">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 
+<title>Fundamentals - Get Me Caffeinated!</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
 <script>
+
+	var quiz = {"question": [
+			{"text": "Which of the following is a stimulant often found in coffee?", "a": "Milk", "b": "Sugar", "c": "Caffeine", "d": "Cream", "answer": "c"},
+			{"text": "What material is usually used to make coffee filters?", "a": "Disposable Paper", "b": "Aluminum Foil", "c": "Stainless Steel", "d": "Plastic", "answer": "a"},
+			{"text": "The seeds of which plant are used to make coffee?", "a": "Acacia", "b": "Coffea", "c": "Ginseng", "d": "Pomegrante", "answer": "b"}
+		]
+	};
+	
+	var cur_question = 0;
+	var correct_answers = 0;
+	var answered = false;
+	
+	function loadQuiz(q)
+	{
+		var quiz_html = "";
+		quiz_html += quiz.question[q].text + "<br />";
+		quiz_html += '<label><input type="radio" id="choice_a" name="answer" value="a">' + quiz.question[q].a + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_b" name="answer" value="b">' + quiz.question[q].b + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_c" name="answer" value="c">' + quiz.question[q].c + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_d" name="answer" value="d">' + quiz.question[q].d + '</label><br>';
+		quiz_html += '<input type="button" id="quiz_button" value="Answer" onclick="answer();">';
+		var quiz_div = document.getElementById("quiz");
+		quiz_div.innerHTML = quiz_html;
+	}
+	
+	function answer()
+	{
+		if(answered) return;
+	
+		var correct = false;
+		var choices = new Array();
+		choices[0] = document.getElementById("choice_a");
+		choices[1] = document.getElementById("choice_b");
+		choices[2] = document.getElementById("choice_c");
+		choices[3] = document.getElementById("choice_d");
+	
+		for(var i = 0; i < choices.length; i++)
+		{
+			if(choices[i].checked && choices[i].value == quiz.question[cur_question].answer)
+				correct = true;
+		}
+		
+		var quiz_div = document.getElementById("quiz");
+		var quiz_button = document.getElementById("quiz_button");
+		
+		if(correct)
+		{
+			quiz_div.innerHTML += '<span style="color: green"> Correct!</span>';
+			correct_answers++;
+		}
+		else
+			quiz_div.innerHTML += '<span style="color: red"> That is not correct.</span>';
+			
+		quiz_div.innerHTML += ' <a href="" style="color: blue; text-decoration: underline;" onclick="nextQuestion();return false;">Next Question</a>';
+		answered = true;
+	}
+	
+	function nextQuestion()
+	{
+		cur_question++;
+		answered = false;
+		
+		if(cur_question < quiz.question.length)
+			loadQuiz(cur_question);
+		else
+		{
+			var quiz_div = document.getElementById("quiz");
+			quiz_div.innerHTML = "<h4>Quiz Complete!</h4>You got " + correct_answers + " out of " + quiz.question.length + " questions correct.";
+		}
+	}
+
     $(function() {
         $( "#fundamentals" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
         $( "#fundamentals li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
@@ -32,11 +104,11 @@
 
 </head>
 
-<body>
+<body onload="loadQuiz(0);">
 <a href="index.html">Home</a> > Fundamentals <br>
 <h1 align="center">Fundamentals</h1>
 <div id="fundamentals">
-	<ul style="width: 15em">
+	<ul style="width: 17em">
 		<li><a href="#term_tab">Learn Coffee Terminology</a></li>
 		<li><a href="#quiz_tab">Test Your Coffee Knowledge</a></li>
 		<li><a href="#game_tab">Play A Matching Game</a></li>
@@ -76,7 +148,7 @@
 		</div>
 	</div>
 	<div id="quiz_tab">
-		<!-- Quiz div goes here -->
+		<div id="quiz"></div>
 	</div>
 	<div id="game_tab">
 		<!-- Matching game div goes here -->
