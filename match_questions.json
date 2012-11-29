@@ -1,0 +1,83 @@
+{
+	"questions" : [
+		{
+			"question" 	: 	"Which of these is a demitasse?",
+
+			"c1" : { 	"pic"		:	"http://t3.gstatic.com/images?q=tbn:ANd9GcQ0VXqMbCvFyJCXHJEa-ZXzczLhCIeLhco5PLl8zyJ-RsUVxJOrpQ",
+					 	"picName"	: 	"demitasse"
+			},
+			"c2" : { 	"pic"		:	"http://t1.gstatic.com/images?q=tbn:ANd9GcQlYDlutUg9N0R2dpnnzqMTCZO_DvIHvDQGmuTJFgRXC3yPo8yHSg",
+					 	"picName"	: 	"mug"
+			},
+			"c3" : { 	"pic"		:	"http://t3.gstatic.com/images?q=tbn:ANd9GcRnehgoPRDbicrcP6-P5HeMZXoKHDXTEXVSpDg8i52RYat-o6T4", 	
+						"picName"	: 	"tea cup"
+			},
+			
+			"answer" 	: 	"c1"
+		},
+
+		{
+			"question" 	: 	"Which of these diagrams represents a Macchiato?",
+
+			"c1" : { 	"pic"		:	"http://lokeshdhakar.com/assets/posts/coffee-drinks-illustrated/cappuccino.png",
+					 	"picName"	: 	"Cappuccino"
+			},
+			"c2" : { 	"pic"		:	"http://lokeshdhakar.com/assets/posts/coffee-drinks-illustrated/caffe_latte.png",
+					 	"picName"	: 	"Cafe Latte"
+			},
+			"c3" : { 	"pic"		:	"http://lokeshdhakar.com/assets/posts/coffee-drinks-illustrated/caffe_macchiato.png", 	
+						"picName"	: 	"Cafe Macchiato"
+			},
+			
+			"answer" 	: 	"c3"
+		},
+
+		{
+			"question" 	: 	"Pick the espresso grind: ",
+
+			"c1" : { 	"pic"		:	"http://t1.gstatic.com/images?q=tbn:ANd9GcSdXHMxTIpj1DFEHGWTQ6qfsAsT3qZJAMvD7CP3Lt7YoC-LxHDdqg",
+					 	"picName"	: 	"Drip brew grind (coarse)"
+			},
+			"c2" : { 	"pic"		:	"http://t3.gstatic.com/images?q=tbn:ANd9GcRCJ0iy9CNHKUPxWgs2QiDOFIlZSaevEEqJQpq67RbrIhmNiDya",
+					 	"picName"	: 	"Espresso grind (fine)"
+			},
+			"c3" : { 	"pic"		:	"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6PIkhoO7z4R8dHH8PTBWdif554UUsrdXxvCCir9Ow0EErPSvJJw", 	
+						"picName"	: 	"Whole beans (roasted)"
+			},
+			
+			"answer" 	: 	"c2"
+		},
+
+		{
+			"question" 	: 	"Which of these is a tamper?",
+
+			"c1" : { 	"pic"		:	"http://t0.gstatic.com/images?q=tbn:ANd9GcQkWE4SXJ7JG1SDXPWzPFOWbiYvU70gSOZtZrjJW9VU1FyYXBHncg",
+					 	"picName"	: 	"steam wand"
+			},
+			"c2" : { 	"pic"		:	"http://t2.gstatic.com/images?q=tbn:ANd9GcQcPAcrXzlYQ7CeYPhVfTbBMllu6C4RIA952um0e2iElZy6J4Ng",
+					 	"picName"	: 	"filter"
+			},
+			"c3" : { 	"pic"		:	"http://t3.gstatic.com/images?q=tbn:ANd9GcSDlks2Sgvd2iAKN9aVW-5GplcnXcD-XJP3Vlr1sTNBYgUrHH-BPQ", 	
+						"picName"	: 	"tamper"
+			},
+			
+			"answer" 	: 	"c3"
+		},
+
+		{
+			"question" 	: 	"Which of these diagrams represents a Cafe Mocha?",
+
+			"c1" : { 	"pic"		:	"http://lokeshdhakar.com/assets/posts/coffee-drinks-illustrated/americano.png",
+					 	"picName"	: 	"Americano"
+			},
+			"c2" : { 	"pic"		:	"http://lokeshdhakar.com/assets/posts/coffee-drinks-illustrated/caffe_mocha.png",
+					 	"picName"	: 	"Cafe Mocha"
+			},
+			"c3" : { 	"pic"		:	"http://lokeshdhakar.com/assets/posts/coffee-drinks-illustrated/cafe_breve.png", 	
+						"picName"	: 	"Cafe Breve"
+			},
+			
+			"answer" 	: 	"c2"
+		}
+	]
+}
