@@ -17,9 +17,10 @@
 <script>
 
 	var quiz = {"question": [
-			{"text": "Which of the following is a stimulant often found in coffee?", "a": "Milk", "b": "Sugar", "c": "Caffeine", "d": "Cream", "answer": "c"},
-			{"text": "What material is usually used to make coffee filters?", "a": "Disposable Paper", "b": "Aluminum Foil", "c": "Stainless Steel", "d": "Plastic", "answer": "a"},
-			{"text": "The seeds of which plant are used to make coffee?", "a": "Acacia", "b": "Coffea", "c": "Ginseng", "d": "Pomegrante", "answer": "b"}
+			{"text": "Which of the following is a stimulant often found in coffee?", "A": "Milk", "B": "Sugar", "C": "Caffeine", "D": "Cream", "answer": "C"},
+			{"text": "What material is usually used to make coffee filters?", "A": "Disposable Paper", "B": "Aluminum Foil", "C": "Stainless Steel", "D": "Plastic", "answer": "A"},
+			{"text": "The seeds of which plant are used to make coffee?", "A": "Acacia", "B": "Coffea", "C": "Ginseng", "D": "Pomegrante", "answer": "B"},
+			{"text": "Which of these places in NOT a major area of coffee cultivation?", "A": "South America", "B": "Western Europe", "C": "Central Africa", "D": "Southeast Asia", "answer": "B"}
 		]
 	};
 	
@@ -27,14 +28,24 @@
 	var correct_answers = 0;
 	var answered = false;
 	
+	function initQuiz()
+	{
+		var quiz_html = "";
+		quiz_html += '<h3 align=center>Coffee Quiz</h3>';
+		quiz_html += '<p align=center>This quiz will test your knowledge of coffee facts and terminology.<br><br><br>';
+		quiz_html += '<input align=center type="button" onclick="loadQuiz(0);" value="Start Quiz" />';
+		var quiz_div = document.getElementById("quiz");
+		quiz_div.innerHTML = quiz_html;
+	}
+	
 	function loadQuiz(q)
 	{
 		var quiz_html = "";
 		quiz_html += quiz.question[q].text + "<br />";
-		quiz_html += '<label><input type="radio" id="choice_a" name="answer" value="a">' + quiz.question[q].a + '</label><br>';
-		quiz_html += '<label><input type="radio" id="choice_b" name="answer" value="b">' + quiz.question[q].b + '</label><br>';
-		quiz_html += '<label><input type="radio" id="choice_c" name="answer" value="c">' + quiz.question[q].c + '</label><br>';
-		quiz_html += '<label><input type="radio" id="choice_d" name="answer" value="d">' + quiz.question[q].d + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_a" name="answer" value="A"> A. ' + quiz.question[q].A + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_b" name="answer" value="B"> B. ' + quiz.question[q].B + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_c" name="answer" value="C"> C. ' + quiz.question[q].C + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_d" name="answer" value="D"> D. ' + quiz.question[q].D + '</label><br>';
 		quiz_html += '<input type="button" id="quiz_button" value="Answer" onclick="answer();">';
 		var quiz_div = document.getElementById("quiz");
 		quiz_div.innerHTML = quiz_html;
@@ -66,13 +77,13 @@
 			correct_answers++;
 		}
 		else
-			quiz_div.innerHTML += '<span style="color: red"> That is not correct.</span>';
+			quiz_div.innerHTML += '<span style="color: red"> The correct answer is ' + quiz.question[cur_question].answer + '.</span>';
 			
-		quiz_div.innerHTML += ' <a href="" style="color: blue; text-decoration: underline;" onclick="nextQuestion();return false;">Next Question</a>';
+		quiz_div.innerHTML += ' <input type="button" onclick="nextQuizQuestion();" value="Next Question" />';
 		answered = true;
 	}
 	
-	function nextQuestion()
+	function nextQuizQuestion()
 	{
 		cur_question++;
 		answered = false;
@@ -89,7 +100,9 @@
     $(function() {
         $( "#fundamentals" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
         $( "#fundamentals li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-		$("#terminology").accordion();
+		$("#terminology").accordion({
+			heightStyle: "content"
+		});
     });
     $(document).ready(function(){
 		$("#game_tab").load("match.html");
@@ -107,15 +120,61 @@
 
 </head>
 
-<body onload="loadQuiz(0);">
+<body onload="initQuiz();">
 <a href="index.html">Home</a> > Fundamentals <br>
 <h1 align="center">Fundamentals</h1>
 <div id="fundamentals">
 	<ul style="width: 17em">
+		<li><a href="#intro_tab">Introduction</a></li>
+		<li><a href="#prep_tab">Preparing Coffee</a></li>
 		<li><a href="#term_tab">Learn Coffee Terminology</a></li>
 		<li><a href="#quiz_tab">Test Your Coffee Knowledge</a></li>
 		<li><a href="#game_tab">Play A Matching Game</a></li>
 	</ul>
+	<div id="intro_tab">
+		<h2 align=center>What is Coffee?</h2>
+		<p>Coffee is a brewed beverage prepared from "Coffee Beans", which are the roasted seeds of the Coffea plant.  Coffee Beans
+		are typically cultivated in South America, Central Africa, and Southeast Asia.  
+		<p>Coffee comes in many varieties: from hot coffee to iced coffee, from decaf to espresso, from black coffee to lattes, there is
+		a coffee drink for everyone.
+	</div>
+	<div id="prep_tab">
+		<h3>Preparing Coffee</h3>
+		<p>If you have never prepared coffee before, it is easy to get started. You will need a few things first:
+		<table border=2><tr><th>Coffeemaker</th><th>Coffee Grounds</th><th>Coffee filter</th><th>Cold Water</th></tr>
+		<tr><td><img width=100 height=100 src="images/coffeemaker.jpg"></td><td><img width=100 height=100 src="images/coffeegrounds.jpg"></td>
+		<td><img width=100 height=100 src="images/coffeefilters.jpg"></td><td><img width=100 height=100 src="images/coldwater.jpg"></td></tr></table>
+		<br><br>
+		<p>You can purchase coffee grounds and coffee filters at any supermarket.  A coffeemaker can be purchased from most department stores.  
+		Once you have these materials, you are ready to make your first cup of coffee!
+		<br><br>
+		<b>Step 1:</b>
+		<p>Place the coffee filter in the coffee filter container on top of the coffeemaker.  Note that some coffee makers come with permanent 
+		filters, so you should consult your owner's manual.
+		<br><br>
+		<b>Step 2:</b>
+		<p>Insert coffee grounds into the coffee filter.  You should insert a tablespoon of coffee grounds for every cup (8 ounces) that you 
+		plan to prepare.
+		<br><br>
+		<b>Step 3:</b>
+		<p>Fill the coffeemaker pot with cold water equal to the amount of cups you plan to make.  You can use the markings on the pot or the
+		cup you plan to drink from in order to measure the water.
+		<br><br>
+		<b>Step 4:</b>
+		<p>Pour the water in the pot into the water container at the top of the coffeemaker.  Make sure not to spill any!
+		<br><br>
+		<b>Step 5:</b>
+		<p>Place the coffee pot on its stand and close the water container.
+		<br><br>
+		<b>Step 6:</b>
+		<p>Press the start button on your coffee maker.
+		<br><br>
+		
+		Once the coffee maker is done brewing the coffee, pour it into your coffee mug and enjoy!
+		
+		Now that you know how to make a simple cup of coffee, <a style="color: blue; text-decoration: underline;" href="beginners.html">perhaps you would like to search for a recipe.</a>
+		
+	</div>
 	<div id="term_tab">
 		<div id="terminology">
 			<h3>Caffeine</h3>
