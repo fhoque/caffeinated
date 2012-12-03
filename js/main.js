@@ -5,7 +5,7 @@ $(document).ready(function(){
 	}).hover(function(){
 			$("#imgHolder img").fadeOut(function() { 
 			  $(this).load(function() { $(this).fadeIn(); }); 
-			  $(this).attr("src", "images/learn.jpg"); 
+			  $(this).attr("src", "images/fundamentals_description.png"); 
 			});
 		}, 
 		function(){
@@ -22,7 +22,7 @@ $(document).ready(function(){
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
 			  $(this).load(function() { $(this).fadeIn(); }); 
-			  $(this).attr("src", "images/beginner.jpg"); 
+			  $(this).attr("src", "images/beginners_description.png"); 
 			});
 		}, 
 		function(){
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
 			  $(this).load(function() { $(this).fadeIn(); }); 
-			  $(this).attr("src", "images/advanced.jpg"); 
+			  $(this).attr("src", "images/advanced_description.png"); 
 			});
 		}, 
 		function(){

@@ -98,8 +98,7 @@
 	}
 
     $(function() {
-        $( "#fundamentals" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-        $( "#fundamentals li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+        $( "#fundamentals" ).tabs();
 		$("#terminology").accordion({
 			heightStyle: "content"
 		});
@@ -109,22 +108,21 @@
     })
     </script>
     <style>
-	#fundamentals { position: absolute; left: 5em; }
-    .ui-tabs-vertical { width: 60em; }
-    .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
-    .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; font-size: 12pt; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-    .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-    .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
-    .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+	.ui-tabs .ui-tabs-panel { background-color: #f5e49c; border-color: #f5e49c; }
+	#fundamentals { margin-left: auto; margin-right: auto; width: 75%; }
+	body { background-color: #A27A47; }
+	.ext_text { color: #f5e49c; }
     </style>
 
 </head>
 
 <body onload="initQuiz();">
+<a href="index.html"><img src="images/logo.png" /></a><br>
 <a href="index.html">Home</a> > Fundamentals <br>
-<h1 align="center">Fundamentals</h1>
+<h1 class="ext_text" align="center">Coffee Fundamentals</h1>
+<p class="ext_text" align=center>This page offers educational resources for new coffee drinkers.</p><br>
 <div id="fundamentals">
-	<ul style="width: 17em">
+	<ul style="font-size: 10pt;">
 		<li><a href="#intro_tab">Introduction</a></li>
 		<li><a href="#prep_tab">Preparing Coffee</a></li>
 		<li><a href="#term_tab">Learn Coffee Terminology</a></li>
@@ -133,15 +131,19 @@
 	</ul>
 	<div id="intro_tab">
 		<h2 align=center>What is Coffee?</h2>
-		<p>Coffee is a brewed beverage prepared from "Coffee Beans", which are the roasted seeds of the Coffea plant.  Coffee Beans
-		are typically cultivated in South America, Central Africa, and Southeast Asia.  
+		<p>Coffee is a brewed beverage prepared from "Coffee Beans", which are the roasted seeds of the Coffea plant.  It is one of the most
+		commonly consumed beverages in the world.
+		<p>According to historical records, the stimulating effects of coffee were first discovered in Ethiopia, and coffee was first consumed
+		on a large scale in the Middle East.  Since then, coffee has become one of the most widely traded commodities in the world.  Coffee Beans
+		are typically cultivated in South America, Central Africa, and Southeast Asia.  These beans are then traded and sold around the world.
+		<p>People often drink coffee for its energizing effect, which is the result of its high caffeine content.    
 		<p>Coffee comes in many varieties: from hot coffee to iced coffee, from decaf to espresso, from black coffee to lattes, there is
 		a coffee drink for everyone.
 	</div>
 	<div id="prep_tab">
 		<h3>Preparing Coffee</h3>
 		<p>If you have never prepared coffee before, it is easy to get started. You will need a few things first:
-		<table border=2><tr><th>Coffeemaker</th><th>Coffee Grounds</th><th>Coffee filter</th><th>Cold Water</th></tr>
+		<table align=center border=2><tr><th>Coffeemaker</th><th>Coffee Grounds</th><th>Coffee filter</th><th>Cold Water</th></tr>
 		<tr><td><img width=100 height=100 src="images/coffeemaker.jpg"></td><td><img width=100 height=100 src="images/coffeegrounds.jpg"></td>
 		<td><img width=100 height=100 src="images/coffeefilters.jpg"></td><td><img width=100 height=100 src="images/coldwater.jpg"></td></tr></table>
 		<br><br>
@@ -172,10 +174,11 @@
 		
 		Once the coffee maker is done brewing the coffee, pour it into your coffee mug and enjoy!
 		
-		Now that you know how to make a simple cup of coffee, <a style="color: blue; text-decoration: underline;" href="beginners.html">perhaps you would like to search for a recipe.</a>
+		Now that you know how to make a simple cup of coffee, <a style="color: blue; text-decoration: underline;" href="questionnaire.html">perhaps you would like to search for a recipe.</a>
 		
 	</div>
 	<div id="term_tab">
+		<p>Here you can find a listing of coffee terminology.
 		<div id="terminology">
 			<h3>Caffeine</h3>
 			<div>
@@ -195,10 +198,25 @@
 				The seed of a coffee plant. Unprocessed coffee beans are roasted in the process of preparing coffee.
 				</p>
 			</div>
+			<h3>Coffee Grounds</h3>
+			<div>
+				<p>
+				Coffee beans that have been crushed.  These are used with a coffeemaker to brew coffee.  The consistency of the
+				coffee grounds effects the type of drink that will be brewed.
+				</p>
+			</div>
 			<h3>Coffeemaker</h3>
 			<div>
 				<p>
 				An appliance which is used to brew coffee.  This machine allows for the preparation of coffee without having to boil water in a separate container.  Also known as a "Coffee Machine".
+				</p>
+			</div>
+			<h3>Espresso</h3>
+			<div>
+				<p>
+				A concentrated drink which is brewed by forcing a small amount of boiling water through ground coffee beans.  Espresso is typically 
+				served in a smaller quantity than regular coffee; typically less than 2 fluid ounces.  It is the basis for many other coffee drinks, 
+				including lattes, cappuccino, and macchiato.
 				</p>
 			</div>
 			<h3>Filter</h3>
@@ -217,6 +235,7 @@
 	</div>
 </div>
 
+<br><br><br>
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

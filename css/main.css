@@ -147,6 +147,6 @@ button, input[type="reset"], input[type="button"], input[type="submit"] {
     font-variant: -moz-use-system-font;
 }
 #imgHolder{
-	width:700px;
-	height:550px;
+	width:600px;
+	height:300px;
 }
