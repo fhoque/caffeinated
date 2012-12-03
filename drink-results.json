@@ -1,57 +1,58 @@
 {
 	"results" : [
 		{
-			"espresso" 	:	{
+			"drinkName" : "espresso",
+			"drinkSize" : "small",
+			"caffeine" 	: "lot",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["espresso machine", "tamper", "demitasse"]
+		},
 
-				"size" 		: "small",
-				"caffeine" 	: "lot",
-				"milk" 		: "none",
-				"temp" 		: "hot",
-				"equip" 	: ["espresso machine", "tamper", "demitasse"]
-			}
+		{
+			"drinkName" : "caffe latte",
+			"drinkSize" : "large",
+			"caffeine" 	: "medium",
+			"milk" 		: "lot",
+			"temp" 		: "hot",
+			"equip" 	: ["espresso machine", "tamper", "glass", "steam wand"]
+		},
+
+		{
+			"drinkName" 	:	"cappuccino",
+			"drinkSize" : "medium",
+			"caffeine" 	: "large",
+			"milk" 		: "lot",
+			"temp" 		: "hot",
+			"equip" 	: ["espresso machine", "tamper", "glass", "steam wand"]
 
 		},
+
 		{
-			"caffe latte" 	:	{
-
-				"size" 		: "large",
-				"caffeine" 	: "medium",
-				"milk" 		: "lot",
-				"temp" 		: "hot",
-				"equip" 	: ["espresso machine", "tamper", "glass", "steam wand"]
-			}
-
+			"drinkName" 	:	"drip coffee",
+			"drinkSize" : "large",
+			"caffeine" 	: "medium",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["coffee machine","mug"]
 		},
+
 		{
-			"cappuccino" 	:	{
-
-				"size" 		: "medium",
-				"caffeine" 	: "large",
-				"milk" 		: "lot",
-				"temp" 		: "hot",
-				"equip" 	: ["espresso machine", "tamper", "glass", "steam wand"]
-			}
-
+			"drinkName" 	:	"turkish coffee",
+			"drinkSize" : "small",
+			"caffeine" 	: "lot",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["dowleh","demitasse"]
 		},
-		{
-			"drip coffee" 	:	{
 
-				"size" 		: "large",
-				"caffeine" 	: "medium",
-				"milk" 		: "none",
-				"temp" 		: "hot",
-				"equip" 	: ["coffee machine","mug"]
-			}
-		},
 		{
-			"turkish coffee" 	:	{
-
-				"size" 		: "small",
-				"caffeine" 	: "lot",
-				"milk" 		: "none",
-				"temp" 		: "hot",
-				"equip" 	: ["dowleh","demitasse"]
-			}
+			"drinkName" 	:	"caffe macchiato",
+			"drinkSize" : "small",
+			"caffeine" 	: "lot",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["dowleh","demitasse"]
 		}
 	]
 }
