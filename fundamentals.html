@@ -46,7 +46,7 @@
 		quiz_html += '<label><input type="radio" id="choice_b" name="answer" value="B"> B. ' + quiz.question[q].B + '</label><br>';
 		quiz_html += '<label><input type="radio" id="choice_c" name="answer" value="C"> C. ' + quiz.question[q].C + '</label><br>';
 		quiz_html += '<label><input type="radio" id="choice_d" name="answer" value="D"> D. ' + quiz.question[q].D + '</label><br>';
-		quiz_html += '<input type="button" id="quiz_button" value="Answer" onclick="answer();">';
+		quiz_html += '<input type="button" id="quiz_button" value="Submit Answer" onclick="answer();">';
 		var quiz_div = document.getElementById("quiz");
 		quiz_div.innerHTML = quiz_html;
 	}
