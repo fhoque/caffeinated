@@ -41,7 +41,7 @@
 	function loadQuiz(q)
 	{
 		var quiz_html = "";
-		quiz_html += quiz.question[q].text + "<br />";
+		quiz_html += quiz.question[q].text + "<br /> <br />";
 		quiz_html += '<label><input type="radio" id="choice_a" name="answer" value="A"> A. ' + quiz.question[q].A + '</label><br>';
 		quiz_html += '<label><input type="radio" id="choice_b" name="answer" value="B"> B. ' + quiz.question[q].B + '</label><br>';
 		quiz_html += '<label><input type="radio" id="choice_c" name="answer" value="C"> C. ' + quiz.question[q].C + '</label><br>';
@@ -73,14 +73,18 @@
 		
 		if(correct)
 		{
-			quiz_div.innerHTML += '<span style="color: green"> Correct!</span>';
+			quiz_div.innerHTML += '<span style="color: green"> Correct!</span> <br />';
 			correct_answers++;
 		}
 		else
-			quiz_div.innerHTML += '<span style="color: red"> The correct answer is ' + quiz.question[cur_question].answer + '.</span>';
+
 			
+		quiz_div.innerHTML += '<span style="color: red"> The correct answer is ' + quiz.question[cur_question].answer + '.</span><br />';
+
 		quiz_div.innerHTML += ' <input type="button" onclick="nextQuizQuestion();" value="Next Question" />';
+		
 		answered = true;
+		
 	}
 	
 	function nextQuizQuestion()
@@ -93,7 +97,7 @@
 		else
 		{
 			var quiz_div = document.getElementById("quiz");
-			quiz_div.innerHTML = "<h4>Quiz Complete!</h4>You got " + correct_answers + " out of " + quiz.question.length + " questions correct.";
+			quiz_div.innerHTML = "<h4>Quiz Complete!</h4>You got " + correct_answers + " out of " + quiz.question.length + " questions correct. <br /> <a style='color: blue; text-decoration: underline;' href='questionnaire.html'>Perhaps you would like to search for a recipe?</a>";
 		}
 	}
 
