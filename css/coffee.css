@@ -56,7 +56,8 @@ blockquote p, blockquote ul, blockquote ol {
 }
 
 a {
-	color: #413C20;
+	color: #;
+	color: blue; text-decoration: underline;
 }
 
 a:hover {
