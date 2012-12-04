@@ -17,7 +17,7 @@ $(document).ready(function(){
 	);
 	
 	$(".beginner").click(function(){
-		document.location.href='beginner.html';
+		document.location.href='beginner2.html';
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
