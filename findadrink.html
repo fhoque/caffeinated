@@ -51,11 +51,6 @@ body { padding-top: 0%; background-color: #A27A47; }
     clear: both;
 }
 
-.center{
-	width: 1000px;
-	margin: 0 auto;
-}
-
 .result 							{ color: black; }
 #page-wrap		                    { width: 500px; margin: 25px auto; }
 
@@ -220,11 +215,15 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 </script>
 </head>
 <body>
-<a href="index.html"><img src="images/logo.png" /></a><br>
-
+	
+	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
+	  <div id="container">
+		<a href="index.html"><img id="logo" src="images/logo.png" /></a><br>
+		  <div id="wrapper">
+			
 <h1 class="ext-text" align=center>Find a Drink</h1>
 
-<p class="ext-text" align=center style="font-size: 14pt; margin-left: 20%; margin-right: 20%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
+<p class="ext-text" align=center style="font-size: 14pt; margin-left: 15%; margin-right: 15%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
 <!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>
  -->
 <!-- <div id="filterArea" class="center ext-text">
@@ -235,7 +234,6 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		</div>
 </div> -->
 
-<form method="post" action="" class="myformdiv">
     <!-- <div class="myformdiv">
         <label for="name">Drink Size</label>
         <input type="text" readonly="readonly" name="drink-size" id="size-val" value="any"/>
@@ -293,7 +291,6 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="temp" id="temp-val2" value="hot" /> Hot
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="temp" id="temp-val3" value="cold" /> Cold
 <br><br>
-</form>
 
 <input type="button" value="Find Drinks" id="submit" /><br><br>
 </div>
