@@ -1,0 +1,178 @@
+{
+	"questions" : [
+		{
+			"question" 	: 	"Click the image you think matches the description.<br/>Red is wrong. Green is right.",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/wrong.jpg",
+					 	"picName"	: 	"wrong answer )':"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/right.jpg",
+					 	"picName"	: 	"right answer :D"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/wrong.jpg", 	
+						"picName"	: 	"wrong answer :'("
+			},
+			
+			"answer" 	: 	"c2"
+		},
+
+		{
+			"question" 	: 	"Which of these is a demitasse?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q1c1.jpg",
+					 	"picName"	: 	"demitasse"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q1c2.jpg",
+					 	"picName"	: 	"mug"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q1c3.jpg", 	
+						"picName"	: 	"tea cup"
+			},
+			
+			"answer" 	: 	"c1"
+		},
+
+		{
+			"question" 	: 	"Which of these diagrams represents a Macchiato?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q2c1.png",
+					 	"picName"	: 	"Cappuccino"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q2c2.png",
+					 	"picName"	: 	"Cafe Latte"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q2c3.png", 	
+						"picName"	: 	"Cafe Macchiato"
+			},
+			
+			"answer" 	: 	"c3"
+		},
+
+		{
+			"question" 	: 	"Which is the espresso grind? ",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q3c1.jpg",
+					 	"picName"	: 	"Drip brew grind (coarse)"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q3c2.jpg",
+					 	"picName"	: 	"Espresso grind (fine)"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q3c3.jpg", 	
+						"picName"	: 	"Whole beans (roasted)"
+			},
+			
+			"answer" 	: 	"c2"
+		},
+
+		{
+			"question" 	: 	"Which of these is a tamper?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q4c1.jpg",
+					 	"picName"	: 	"steam wand"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q4c2.jpg",
+					 	"picName"	: 	"filter"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q4c3.jpg", 	
+						"picName"	: 	"tamper"
+			},
+			
+			"answer" 	: 	"c3"
+		},
+		{
+			"question" 	: 	"Which of these is a mug?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q1c1.jpg",
+					 	"picName"	: 	"demitasse"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q1c2.jpg",
+					 	"picName"	: 	"mug"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q1c3.jpg", 	
+						"picName"	: 	"tea cup"
+			},
+			
+			"answer" 	: 	"c2"
+		},
+
+		{
+			"question" 	: 	"Which of these diagrams represents a Caffe Latte?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q2c1.png",
+					 	"picName"	: 	"Cappuccino"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q2c2.png",
+					 	"picName"	: 	"Cafe Latte"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q2c3.png", 	
+						"picName"	: 	"Cafe Macchiato"
+			},
+			
+			"answer" 	: 	"c2"
+		},
+
+		{
+			"question" 	: 	"Which of these diagrams represents an Cafe Mocha?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q5c1.png",
+					 	"picName"	: 	"Americano"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q5c2.png",
+					 	"picName"	: 	"Cafe Mocha"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q5c3.png", 	
+						"picName"	: 	"Cafe Breve"
+			},
+			
+			"answer" 	: 	"c2"
+		},
+
+		{
+			"question" 	: 	"Pick the drip grind: ",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q3c1.jpg",
+					 	"picName"	: 	"Drip brew grind (coarse)"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q3c2.jpg",
+					 	"picName"	: 	"Espresso grind (fine)"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q3c3.jpg", 	
+						"picName"	: 	"Whole beans (roasted)"
+			},
+			
+			"answer" 	: 	"c1"
+		},
+
+		{
+			"question" 	: 	"Which of these is a steam wand?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q4c1.jpg",
+					 	"picName"	: 	"steam wand"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q4c2.jpg",
+					 	"picName"	: 	"filter"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q4c3.jpg", 	
+						"picName"	: 	"tamper"
+			},
+			
+			"answer" 	: 	"c1"
+		},
+
+		{
+			"question" 	: 	"Which of these diagrams represents an Americano?",
+
+			"c1" : { 	"pic"		:	"images/matchingGame/q5c1.png",
+					 	"picName"	: 	"Americano"
+			},
+			"c2" : { 	"pic"		:	"images/matchingGame/q5c2.png",
+					 	"picName"	: 	"Cafe Mocha"
+			},
+			"c3" : { 	"pic"		:	"images/matchingGame/q5c3.png", 	
+						"picName"	: 	"Cafe Breve"
+			},
+			
+			"answer" 	: 	"c1"
+		}
+	]
+}

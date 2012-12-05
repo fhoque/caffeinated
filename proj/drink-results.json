@@ -1,0 +1,102 @@
+{
+	"results" : [
+		{
+			"drinkName" : "Espresso",
+			"drinkSize" : "small",
+			"caffeine" 	: "large",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["Espresso Machine", "Tamper", "Demitasse"],
+			"slideshow" : "js/reveal/directions_espresso.html",
+			"description": "A concentrated drink that is brewed by forcing a small amount of boiling water that is under pressure through finely ground coffee beans"
+		},
+
+		{
+			"drinkName" : "Caffe Latte",
+			"drinkSize" : "large",
+			"caffeine" 	: "medium",
+			"milk" 		: "large",
+			"temp" 		: "hot",
+			"equip" 	: ["Espresso Machine", "Tamper", "Glass", "Steam Wand"],
+			"slideshow" : "js/reveal/directions_latte.html",
+			"description" : "A mildly caffeinated drink that is made with a combination of 1 part espresso and 2 parts steamed milk."
+		},
+
+		{
+			"drinkName" 	:	"Cappuccino",
+			"drinkSize" : "medium",
+			"caffeine" 	: "large",
+			"milk" 		: "large",
+			"temp" 		: "hot",
+			"equip" 	: ["Espresso Machine", "Tamper", "Glass", "Steam Wand"],
+			"slideshow" : "js/reveal/directions_cappuccino.html",
+			"description" : "A strong drink that is made with a combination of 1 part steamed milk, 1 part milk foam, and 1 part espresso."
+		},
+
+		{
+			"drinkName" 	:	"Drip Coffee",
+			"drinkSize" : "large",
+			"caffeine" 	: "medium",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["Coffee Machine", "Mug"],
+			"slideshow" : "",
+			"description" : "A coffee drink that is brewed in a standard drip coffeemaker. Prepared by pouring water onto coffee grounds contained in a filter."
+		},
+
+		{
+			"drinkName" 	:	"Turkish Coffee",
+			"drinkSize" : "small",
+			"caffeine" 	: "large",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["Dowleh", "Demitasse"],
+			"slideshow" : "",
+			"description" : "A small yet strong drink similar to espresso; Uses grinds of a powder-like consistency and brewed at extremely high temperatures."
+		},
+
+		{
+			"drinkName" 	:	"Iced Coffee",
+			"drinkSize" : "large",
+			"caffeine" 	: "medium",
+			"milk" 		: "large",
+			"temp" 		: "cold",
+			"equip" 	: ["Coffee machine", "Ice", "Glass"],
+			"slideshow" : "",
+			"description" : "A cool and refreshing twist on drip coffee. Usually served chilled with ice cubes, flavored syrup, and whiped cream"
+		},
+
+		{
+			"drinkName" 	:	"Iced Frappe",
+			"drinkSize" : "large",
+			"caffeine" 	: "medium",
+			"milk" 		: "medium",
+			"temp" 		: "cold",
+			"equip" 	: ["Coffee machine", "Cocktail shaker", "Blender", "Glass"],
+			"slideshow" : "",
+			"description" : "A refreshing, slushie-like coffee drink with a thicker consistency than iced coffee."
+		},
+
+		{
+			"drinkName" 	:	"Babyccino",
+			"drinkSize" : "medium",
+			"caffeine" 	: "small",
+			"milk" 		: "large",
+			"temp" 		: "hot",
+			"equip" 	: ["Espresso machine", "Steam wand", "Glass", "Chocolate powerder"],
+			"slideshow" : "",
+			"description" : "Very lightly caffeinated steamed milk and milk foam, topped with chocolate powder. Primarily for children, hence the name."
+		},
+
+		{
+			"drinkName" 	:	"Caffe Macchiato",
+			"drinkSize" : "small",
+			"caffeine" 	: "large",
+			"milk" 		: "none",
+			"temp" 		: "hot",
+			"equip" 	: ["Dowleh","Demitasse"],
+			"slideshow" : "",
+			"description" : "A coffee drink that is prepared with espresso and a small amount of milk."
+		}
+	]
+}
