@@ -212,6 +212,10 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		$("#drinkTxt").keyup(function(){
 			filterJson("advanced");
 		})
+		$("input[type=radio]").click(function() { 
+			var v = $("input[type=radio]:checked"); 
+			filterJson("beginner", v[0].value, v[1].value, v[2].value, v[3].value ); 
+		})
 	})
 </script>
 </head>
