@@ -2,23 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8" />
-
-<!-- Le styles -->
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="bootstrap/css/docs.css" rel="stylesheet">
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
-
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 <style>
 body { background-color: #A27A47; }
 
 .ext-text { color: #f5e49c; }
-
-#questions { padding-left: 10%; color: #f5e49c; font-size: 14pt; }
-
-.question { padding-left: 40%; }
 
 .container {
     width: 960px;
@@ -51,11 +40,13 @@ body { background-color: #A27A47; }
 	margin: 0 auto;
 }
 
-.result 							{ color: black; }
+a                                   { text-decoration: none; color: #9bf9ff; border-bottom: 1px dotted #9bf9ff; }
+a:hover                             { border-bottom-style: solid; }
 #page-wrap		                    { width: 500px; margin: 25px auto; }
 h1                                  { font: 26px Georgia, Serif; margin: 0 0 10px 0; }
 form                                { margin: 50px 0 0 0; }
 label                               { font: bold 20px Helvetica, sans-serif; display: block; float: left; text-align: right; padding: 5px 10px 0 0; 								width: 240px; }
+input[type=text]                    { float: left; width: 100px; font: bold 20px Helvetica, sans-serif; padding: 3px 0 0 0; text-align: center; }
 form.myformdiv div.myformdiv                            { overflow: hidden; margin: 0 0 5px 0; }
 .button                             { margin: 0 0 0 5px; text-indent: -9999px; cursor: pointer; width: 29px; height: 29px; float: left; text-align: center; background: url(http://css-tricks.com/examples/InputNumberIncrementer/images/buttons.png) no-repeat; }
 .dec                                { background-position: 0 -29px; }
@@ -93,7 +84,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			})
 		}
 		// var htmlString = 	'<div id="resultsList"> ' ;
-		var htmlString = '<p class="ext-text" align=center>You can click on any of the results to view an instructional slideshow</p>';
+		var htmlString = '';
 		$.each(filteredDrinks, function(idx, obj){
 
 			var equipString = "<h3>Equipment Needed</h3><ul>";
@@ -102,16 +93,16 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			})
 			equipString += "</ul>";
 
-			htmlString += 	'<a class="result" href="'+obj.slideshow+'"><div class="container" class="center">'+
+			htmlString += 	'<div class="container" class="center">'+
 
 							    '<div class="primary"> <img src="images/resultImgs/'+obj.drinkName+'.png" alt="'+obj.drinkName+'"> </div>'+
 							    
-							    '<div class="content"> <h3>'+obj.drinkName+'</h3><p>'+obj.drinkName+' and description </p> </div>'+
+							    '<div class="content"> <h3>Description</h3><p>'+obj.drinkName+' and description </p> </div>'+
 							    
 							    '<div class="secondary"> <p> '+equipString+' </p> </div>'+
 							    
 							    '<div class="footer"> <p></p> </div>'+
-							'</div></a>'
+							'</div>'
 		})
 
 			if(filteredDrinks.length == 0){
@@ -184,10 +175,10 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		$("#tempDecr").click( function(){ valToggle('temp', 'decr') } );
 
 		$("#submit").click(function(){
-			var arg1 = $("input[name='drink-size']:checked").val().toLowerCase();
-			var arg2 = $("input[name='caff-content']:checked").val().toLowerCase();
-			var arg3 = $("input[name='milk-content']:checked").val().toLowerCase();
-			var arg4 = $("input[name='temp']:checked").val().toLowerCase();
+			var arg1 = $("#size-val").val();
+			var arg2 = $("#caff-val").val();
+			var arg3 = $("#milk-val").val();
+			var arg4 = $("#temp-val").val();
 			filterJson("beginner", arg1, arg2, arg3, arg4);
 		});
 		$("#drinkTxt").keyup(function(){
@@ -198,21 +189,21 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 </head>
 <body>
 <a href="index.html"><img src="images/logo.png" /></a><br>
-<a href="index.html">Home</a> > <span class="ext-text">Find a Drink</span> <br>
+<a href="index.html">Home</a> > <span class="ext-text">Beginner's Questionnaire</span> <br>
 
-<h1 class="ext-text" align=center>Find a Drink</h1>
+<h1 class="ext-text" align=center>Coffee Questionnaire</h1>
 <!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>
  -->
-<!-- <div id="filterArea" class="center ext-text">
+<div id="filterArea" class="center ext-text">
 		<h2>Tell us how you'd like your drink by answering these 4 questions:</h2>
 		<div style="display:inline-block; color:white;">
 			Or, if you've been here before, simply enter the name of a drink you'd like to try: 
 			<input id="drinkTxt" type="text" style="float:right !important"/>
 		</div>
-</div> -->
+</div>
 
 <form method="post" action="" class="myformdiv">
-    <!-- <div class="myformdiv">
+    <div class="myformdiv">
         <label for="name">Drink Size</label>
         <input type="text" readonly="readonly" name="drink-size" id="size-val" value="any"/>
         <div id="sizeIncr" class="inc button">+</div>
@@ -235,51 +226,10 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
         <input type="text" readonly="readonly" name="temp" id="temp-val" value="any" />
         <div id="tempIncr" class="inc button">+</div>
         <div id="tempDecr" class="dec button">-</div>
-    </div> -->
-
-<span style="padding-left: 60%; font-size: 14pt;" class="ext-text">Search by drink name: <input id="drinkTxt" type="text" /></span><br>
-<div id="resultsList" class="center"> </div>
-
-<div id="questions">
-1. What size of drink do you like most?:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="drink-size" id="size-val" value="any" /> No Preference
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="drink-size" id="size-val" value="small" /> Small
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="drink-size" id="size-val" value="medium" /> Medium
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="drink-size" id="size-val" value="large" /> Large
-<br><br>
-
-2. How much caffeine do you like in your drinks?:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="caff-content" id="caff-val" value="any" /> No Preference
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="caff-content" id="caff-val" value="none" /> None
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="caff-content" id="caff-val" value="small" /> A small amount
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="caff-content" id="caff-val" value="medium" /> A moderate amount
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="caff-content" id="caff-val" value="large" /> A large amount
-<br><br>
-
-3. How much milk do you like in your drinks?:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="milk-content" id="milk-val" value="any" /> No Preference
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="milk-content" id="milk-val" value="none" /> None
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="milk-content" id="milk-val" value="small" /> A small amount
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="milk-content" id="milk-val" value="medium" /> A moderate amount
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="milk-content" id="milk-val" value="large" /> A large amount
-<br><br>
-
-4. Do you like your drinks to be hot or cold?:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="temp" id="temp-val" value="any" /> No Preference
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="temp" id="temp-val" value="hot" /> Hot
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="temp" id="temp-val" value="cold" /> Cold
-<br><br>
-</div>
-
+    </div>
+    
 </form>
     <input type="submit" value="Find Drinks" id="submit" />
-	
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/application.js"></script>
-<script src="bootstrap/js/bootswatch.js"></script>
-
+	<div id="resultsList" class="center"> </div>
 </body>
 </html>
