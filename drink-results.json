@@ -23,7 +23,7 @@
 		},
 
 		{
-			"drinkName" 	:	"Cappuccino",
+			"drinkName" : "Cappuccino",
 			"drinkSize" : "medium",
 			"caffeine" 	: "large",
 			"milk" 		: "large",
@@ -34,7 +34,7 @@
 		},
 
 		{
-			"drinkName" 	:	"Drip Coffee",
+			"drinkName" : "Drip Coffee",
 			"drinkSize" : "large",
 			"caffeine" 	: "medium",
 			"milk" 		: "none",
@@ -56,7 +56,7 @@
 		},
 
 		{
-			"drinkName" 	:	"Iced Coffee",
+			"drinkName" : "Iced Coffee",
 			"drinkSize" : "large",
 			"caffeine" 	: "medium",
 			"milk" 		: "large",
@@ -67,7 +67,7 @@
 		},
 
 		{
-			"drinkName" 	:	"Iced Frappe",
+			"drinkName" : "Iced Frappe",
 			"drinkSize" : "large",
 			"caffeine" 	: "medium",
 			"milk" 		: "medium",
@@ -83,7 +83,7 @@
 			"caffeine" 	: "small",
 			"milk" 		: "large",
 			"temp" 		: "hot",
-			"equip" 	: ["Espresso machine", "Steam wand", "Glass", "Chocolate powerder"],
+			"equip" 	: ["Espresso machine", "Steam wand", "Glass", "Chocolate powder"],
 			"slideshow" : "",
 			"description" : "Very lightly caffeinated steamed milk and milk foam, topped with chocolate powder. Primarily for children, hence the name."
 		},
