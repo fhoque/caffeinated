@@ -12,6 +12,7 @@
 
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
 <style>
 body { padding-top: 0%; background-color: #A27A47; }
 
@@ -54,9 +55,9 @@ body { padding-top: 0%; background-color: #A27A47; }
 
 .result 							{ color: black; }
 #page-wrap		                    { width: 500px; margin: 25px auto; }
-h1                                  { font: 26px Georgia, Serif; margin: 0 0 10px 0; }
+
 form                                { margin: 50px 0 0 0; }
-label                               { font: bold 20px Helvetica, sans-serif; display: block; float: left; text-align: right; padding: 5px 10px 0 0; 								width: 240px; }
+label                               { font: bold 20px Helvetica, sans-serif; display: block; float: left; text-align: right; padding: 5px 10px 0 0; width: 240px; }
 form.myformdiv div.myformdiv                            { overflow: hidden; margin: 0 0 5px 0; }
 .button                             { margin: 0 0 0 5px; text-indent: -9999px; cursor: pointer; width: 29px; height: 29px; float: left; text-align: center; background: url(http://css-tricks.com/examples/InputNumberIncrementer/images/buttons.png) no-repeat; }
 .dec                                { background-position: 0 -29px; }
@@ -64,6 +65,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 #submit:hover                       { background: #ccc; }
 </style>
 <script>
+
 	var resultsList = [];  //holds drinks
 
 	/**
@@ -198,10 +200,14 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 </script>
 </head>
 <body>
-<a href="index.html"><img src="images/logo.png" /></a><br>
-<a href="index.html">Home</a> > <span class="ext-text">Find a Drink</span> <br>
+
+	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
+	  <div id="container">
+		<a href="index.html"><img src="images/logo.png" /></a><br>
+		  <div id="wrapper">
 
 <h1 class="ext-text" align=center>Find a Drink</h1>
+
 <p class="ext-text" align=center style="font-size: 14pt; margin-left: 20%; margin-right: 20%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
 <!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>
  -->
@@ -283,5 +289,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 <script src="bootstrap/js/application.js"></script>
 <script src="bootstrap/js/bootswatch.js"></script>
 
+</div>
+</div>
 </body>
 </html>
