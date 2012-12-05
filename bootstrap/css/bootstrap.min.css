@@ -10,7 +10,7 @@ sup{top:-0.5em;}
 sub{bottom:-0.25em;}
 img{max-width:100%;width:auto\9;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
 
-#logo {margin: 45px 45px -170px 45px; width: 300px;}
+#logo {margin: 45px 45px -100px 45px; width: 300px;}
 
 #map_canvas img,.google-maps img{max-width:none;}
 button,input,select,textarea{margin:0;font-size:100%;vertical-align:middle;}

@@ -22,7 +22,7 @@ $(document).ready(function(){
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
 			  $(this).load(function() { $(this).fadeIn(); }); 
-			  $(this).attr("src", "images/beginners_description.png"); 
+			  $(this).attr("src", "images/advanced_description.png"); 
 			});
 		}, 
 		function(){
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
 			  $(this).load(function() { $(this).fadeIn(); }); 
-			  $(this).attr("src", "images/advanced_description.png"); 
+			  $(this).attr("src", "images/beginners_description.png"); 
 			});
 		}, 
 		function(){

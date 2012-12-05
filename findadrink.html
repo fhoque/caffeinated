@@ -102,7 +102,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		
 		
 		// var htmlString = 	'<div id="resultsList"> ' ;
-		var htmlString = "<h3>Search: <input id='drinkTxt' type='text' placeholder='by drink name'/></h3>";
+		var htmlString = "<h3>Search: <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3>";
 		htmlString += '<h3 class="ext-text">You Might Like:</h3>';
 		$.each(filteredDrinks, function(idx, obj){
 
@@ -228,7 +228,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			
 <h1 class="ext-text" align=center>Find a Drink</h1>
 
-<p class="ext-text" align=center style="font-size: 14pt; margin-left: 15%; margin-right: 15%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
+<p class="ext-text" align=center style="font-size: 14pt; margin-left: 12%; margin-right: 12%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
 <!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>
  -->
 <!-- <div id="filterArea" class="center ext-text">
@@ -266,14 +266,14 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 
 <div id="questions">
 <h3 class="ext-text">What Are Your Tastes?</h3>
-1. What size of drink do you like most?:<br>
+1. <b>Size</b>:<br>
 <input type="radio" name="drink-size" id="size-val1" value="any" checked /> No Preference <br />
 <input type="radio" name="drink-size" id="size-val2" value="small" /> Small <br />
 <input type="radio" name="drink-size" id="size-val3" value="medium" /> Medium <br />
 <input type="radio" name="drink-size" id="size-val4" value="large" /> Large
 <br><br>
 
-2. How much caffeine do you like in your drinks?:<br>
+2. Amount of <b>caffeine</b>?:<br>
 <input type="radio" name="caff-content" id="caff-val1" value="any" checked /> No Preference <br />
 <input type="radio" name="caff-content" id="caff-val2" value="none" /> None <br />
 <input type="radio" name="caff-content" id="caff-val3" value="small" /> A small amount <br />
@@ -281,7 +281,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 <input type="radio" name="caff-content" id="caff-val" value="large" /> A large amount
 <br><br>
 
-3. How much milk do you like in your drinks?:<br>
+3. Amount of <b>milk</b>:<br>
 <input type="radio" name="milk-content" id="milk-val1" value="any" checked /> No Preference <br />
 <input type="radio" name="milk-content" id="milk-val2" value="none" /> None <br />
 <input type="radio" name="milk-content" id="milk-val3" value="small" /> A small amount <br />
@@ -289,13 +289,13 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 <input type="radio" name="milk-content" id="milk-val" value="large" /> A large amount
 <br><br>
 
-4. Do you like your drinks to be hot or cold?:<br>
+4. <b>Temperature</b>:<br>
 <input type="radio" name="temp" id="temp-val1" value="any" checked /> No Preference <br />
 <input type="radio" name="temp" id="temp-val2" value="hot" /> Hot <br />
 <input type="radio" name="temp" id="temp-val3" value="cold" /> Cold
 <br>
 
-<input type="button" value="Find Drinks" id="submit" /><br><br>
+<input type="button" value="Search" id="submit" /><br><br>
 </div>
 
 <div id="resultsList" class="center"></div>
