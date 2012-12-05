@@ -102,7 +102,8 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		
 		
 		// var htmlString = 	'<div id="resultsList"> ' ;
-		var htmlString = '<h3 class="ext-text">You Might Like:</h3>';
+		var htmlString = "<h3>Search: <input id='drinkTxt' type='text' placeholder='by drink name'/></h3>";
+		htmlString += '<h3 class="ext-text">You Might Like:</h3>';
 		$.each(filteredDrinks, function(idx, obj){
 
 			var equipString = "<h5>Equipment Needed</h5><ul>";
@@ -259,8 +260,6 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
         <div id="tempDecr" class="dec button">-</div>
     </div> -->
 
-<span style="padding-left: 60%; font-size: 14pt;" class="ext-text">Search by drink name: <input id="drinkTxt" type="text" /></span><br><br><br>
-
 <div id="questions">
 <h3 class="ext-text">What Are Your Tastes?</h3>
 1. What size of drink do you like most?:<br>
@@ -295,7 +294,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 <input type="button" value="Find Drinks" id="submit" /><br><br>
 </div>
 
-<div id="resultsList" class="center"> <p class="ext-text"></p> </div>
+<div id="resultsList" class="center"></div>
 
 
 
