@@ -70,10 +70,10 @@
 			"c1" : { 	"pic"		:	"images/matchingGame/q5c1.png",
 					 	"picName"	: 	"Americano"
 			},
-			"c2" : { 	"pic"		:	"images/matchingGame/q5c2.jpg",
+			"c2" : { 	"pic"		:	"images/matchingGame/q5c2.png",
 					 	"picName"	: 	"Cafe Mocha"
 			},
-			"c3" : { 	"pic"		:	"images/matchingGame/q5c3.jpg", 	
+			"c3" : { 	"pic"		:	"images/matchingGame/q5c3.png", 	
 						"picName"	: 	"Cafe Breve"
 			},
 			
