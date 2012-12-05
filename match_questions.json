@@ -1,7 +1,7 @@
 {
 	"questions" : [
 		{
-			"question" 	: 	"Click the image you think matches the description.<br/>Red is wrong. Green is right.",
+			"question" 	: 	"<b>Directions</b>: Click the image you believe answers the question. Red is wrong. Green is right.",
 
 			"c1" : { 	"pic"		:	"images/matchingGame/wrong.jpg",
 					 	"picName"	: 	"wrong answer )':"
