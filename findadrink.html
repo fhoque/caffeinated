@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<title>Find a drink - Get Me Caffeinated!</title>
 
 <!-- Le styles -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -106,7 +107,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 
 							    '<div class="primary"> <img src="images/resultImgs/'+obj.drinkName+'.png" alt="'+obj.drinkName+'"> </div>'+
 							    
-							    '<div class="content"> <h3>'+obj.drinkName+'</h3><p>'+obj.drinkName+' and description </p> </div>'+
+							    '<div class="content"> <h3>'+obj.drinkName+'</h3><p>'+obj.description+'</p> </div>'+
 							    
 							    '<div class="secondary"> <p> '+equipString+' </p> </div>'+
 							    
@@ -201,6 +202,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 <a href="index.html">Home</a> > <span class="ext-text">Find a Drink</span> <br>
 
 <h1 class="ext-text" align=center>Find a Drink</h1>
+<p class="ext-text" align=center style="font-size: 14pt; margin-left: 20%; margin-right: 20%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
 <!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>
  -->
 <!-- <div id="filterArea" class="center ext-text">
@@ -238,7 +240,6 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
     </div> -->
 
 <span style="padding-left: 60%; font-size: 14pt;" class="ext-text">Search by drink name: <input id="drinkTxt" type="text" /></span><br>
-<div id="resultsList" class="center"> </div>
 
 <div id="questions">
 1. What size of drink do you like most?:<br>
@@ -273,6 +274,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 
 </form>
     <input type="submit" value="Find Drinks" id="submit" />
+	<div id="resultsList" class="center"> <p class="ext-text" align=center>Your results will be displayed below.</p> </div>
 	
 <!-- Le javascript
 ================================================== -->

@@ -1,58 +1,69 @@
 {
 	"results" : [
 		{
-			"drinkName" : "espresso",
+			"drinkName" : "Espresso",
 			"drinkSize" : "small",
-			"caffeine" 	: "lot",
+			"caffeine" 	: "large",
 			"milk" 		: "none",
 			"temp" 		: "hot",
-			"equip" 	: ["Espresso Machine", "Tamper", "Demitasse"]
+			"equip" 	: ["Espresso Machine", "Tamper", "Demitasse"],
+			"slideshow" : "js/reveal/directions_espresso.html",
+			"description": "A concentrated drink that is brewed by forcing a small amount of boiling water that is under pressure through finely ground coffee beans"
 		},
 
 		{
-			"drinkName" : "caffe latte",
+			"drinkName" : "Caffe Latte",
 			"drinkSize" : "large",
 			"caffeine" 	: "medium",
-			"milk" 		: "lot",
+			"milk" 		: "large",
 			"temp" 		: "hot",
-			"equip" 	: ["Espresso Machine", "Tamper", "Glass", "Steam Wand"]
+			"equip" 	: ["Espresso Machine", "Tamper", "Glass", "Steam Wand"],
+			"slideshow" : "js/reveal/directions_latte.html",
+			"description" : "A drink that is made with a combination of espresso and steamed milk."
 		},
 
 		{
-			"drinkName" 	:	"cappuccino",
+			"drinkName" 	:	"Cappuccino",
 			"drinkSize" : "medium",
 			"caffeine" 	: "large",
-			"milk" 		: "lot",
+			"milk" 		: "large",
 			"temp" 		: "hot",
-			"equip" 	: ["Espresso Machine", "Tamper", "Glass", "Steam Wand"]
-
+			"equip" 	: ["Espresso Machine", "Tamper", "Glass", "Steam Wand"],
+			"slideshow" : "js/reveal/directions_cappuccino.html",
+			"description" : "A coffee drink that is made with a combination of hot milk, steamed-milk foam, and espresso."
 		},
 
 		{
-			"drinkName" 	:	"drip coffee",
+			"drinkName" 	:	"Drip Coffee",
 			"drinkSize" : "large",
 			"caffeine" 	: "medium",
 			"milk" 		: "none",
 			"temp" 		: "hot",
-			"equip" 	: ["Coffee Machine", "Mug"]
+			"equip" 	: ["Coffee Machine", "Mug"],
+			"slideshow" : "",
+			"description" : "A coffee drink that is brewed in a standard drip coffeemaker.  Prepared by pouring water onto coffee grounds contained in a filter."
 		},
 
 		{
-			"drinkName" 	:	"turkish coffee",
+			"drinkName" 	:	"Turkish Coffee",
 			"drinkSize" : "small",
-			"caffeine" 	: "lot",
+			"caffeine" 	: "medium",
 			"milk" 		: "none",
 			"temp" 		: "hot",
-			"equip" 	: ["Dowleh", "Demitasse"]
+			"equip" 	: ["Dowleh", "Demitasse"],
+			"slideshow" : "",
+			"description" : "A coffee drink similar to espresso which is brewed at extremely high temperatures."
 		},
 
 		{
-			"drinkName" 	:	"caffe macchiato",
+			"drinkName" 	:	"Caffe Macchiato",
 			"drinkSize" : "small",
-			"caffeine" 	: "lot",
+			"caffeine" 	: "large",
 			"milk" 		: "none",
 			"temp" 		: "hot",
-			"equip" 	: ["Dowleh","Demitasse"]
+			"equip" 	: ["Dowleh","Demitasse"],
+			"slideshow" : "",
+			"description" : "A coffee drink that is prepared with espresso and a small amount of milk."
 		}
 	]
 }

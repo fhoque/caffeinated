@@ -17,7 +17,7 @@ $(document).ready(function(){
 	);
 	
 	$(".beginner").click(function(){
-		document.location.href='beginner2.html';
+		document.location.href='findadrink.html';
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 	);
 		
 	$(".advanced").click(function(){
-		document.location.href='advanced.html';
+		document.location.href='findadrink.html';
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
