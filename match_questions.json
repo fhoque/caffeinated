@@ -49,7 +49,7 @@
 		},
 
 		{
-			"question" 	: 	"Pick the espresso grind: ",
+			"question" 	: 	"Which is the espresso grind? ",
 
 			"c1" : { 	"pic"		:	"images/matchingGame/q3c1.jpg",
 					 	"picName"	: 	"Drip brew grind (coarse)"

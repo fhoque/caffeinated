@@ -31,7 +31,7 @@
 	function initQuiz()
 	{
 		var quiz_html = "";
-		quiz_html += '<h3 align=center>Coffee Quiz</h3>';
+		quiz_html += '<h3 align=center>Test Your Coffee Knowledge</h3>';
 		quiz_html += '<p align=center>This quiz will test your knowledge of coffee facts and terminology.<br><br><br>';
 		quiz_html += '<input align=center type="button" onclick="loadQuiz(0);" value="Start Quiz" />';
 		var quiz_div = document.getElementById("quiz");
@@ -97,7 +97,7 @@
 		else
 		{
 			var quiz_div = document.getElementById("quiz");
-			quiz_div.innerHTML = "<h4>Quiz Complete!</h4>You got " + correct_answers + " out of " + quiz.question.length + " questions correct. <br /> <a style='color: #78310e; text-decoration: underline;' href='findadrink.html'>Perhaps you would like to search for a recipe?</a>";
+			quiz_div.innerHTML = "<h4>Quiz Complete!</h4>You got " + correct_answers + " out of " + quiz.question.length + " questions correct. <br /> <a style='color: #78310e; text-decoration: underline;' href='findadrink.html'>Perhaps you would like to search for a drink recipe?</a>";
 		}
 	}
 
@@ -112,12 +112,12 @@
     })
     </script>
     <style>
-	.ui-tabs .ui-tabs-panel { background-color: #f5e49c; border-color: #f5e49c; }
+	.ui-tabs .ui-tabs-panel { background-color: #ebd5a9; border-color: #f5e49c; }
 	#fundamentals { margin-left: auto; margin-right: auto; width: 100%; }
 	body { background-color: #A27A47; padding-top: 0%; }
 	.ext_text { color: #3e1e17; }
     </style>
-
+	
 </head>
 
 <body onload="initQuiz();">
@@ -131,7 +131,7 @@
 <p class="ext_text" align=center>This page offers educational resources for new coffee drinkers.</p><br>
 <div id="fundamentals">
 	<ul style="font-size: 10pt;">
-		<li><a href="#intro_tab">Introduction</a></li>
+		<li><a href="#intro_tab">What is Coffee?</a></li>
 		<!--<li><a href="#prep_tab">Preparing Your First Cup</a></li>-->
 		<li><a href="#term_tab">Learn Coffee Terminology</a></li>
 		<li><a href="#quiz_tab">Test Your Coffee Knowledge</a></li>
@@ -190,7 +190,8 @@
 	</div>-->
 	
 	<div id="term_tab">
-		<p>Here you can find a listing of coffee terminology.
+		<h3>Learn Coffee Terminology</h3>
+		<p align="center">Here you can find a listing of coffee terminology.</p>
 		<div id="terminology">
 			<h3>Caffeine</h3>
 			<div>
@@ -248,7 +249,7 @@
 			<h3>Espresso Machine</h3>
 			<div>
 				<p>
-				A machine specifically designed for the preperation of espresso.  Because espresso requires specific conditions with regard to pressure,
+				A machine specifically designed for the preparation of espresso.  Because espresso requires specific conditions with regard to pressure,
 				this specialized machine must be used to brew espresso as opposed to a regular coffeemaker.
 				</p>
 			</div>

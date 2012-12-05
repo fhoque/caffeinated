@@ -19,32 +19,47 @@ body { padding-top: 0%; background-color: #A27A47; }
 
 .ext-text { color: #3e1e17; }
 
-#questions { padding-left: 4%; color: #3e1e17; font-size: 12pt; float: left; width: 42%; }
-#resultsList { padding-right: 4%; float: right; width: 42%;}
+#questions { color: #3e1e17; font-size: 12pt; float: left; width: 35%; }
+#resultsList { float: right; width: 50%;}
 
 .question { padding-left: 40%; }
 
 .container {
-    width: 560px;
+    width: 500px;
     margin: 25px auto;
     border: gray solid 10px;
 	background-color: #ebd5a9;
 	font-size: 10pt;
+	padding: 0 5px 0 5px;
 }
 
 .primary {
-    float: right;
-    width: 240px;
+    float: left;
+    width: 120px;
+	margin: -10px 0 10px 22px;
+}
+
+.oops {
+    float: left;
+    width: 135px;
+	margin: 25px 0 -5px 25px;
+}
+
+.error-message {
+	float: right;
+	margin: -100px 0 0 190px;
 }
 
 .content {
     float: left;
     width: 480px;
+	padding: 5px 5px 0 5px;
 }
 
 .secondary {
     float: left;
-    width: 240px;
+    width: 340px;
+	padding: 0 5px 5px 5px;
 }
 
 .footer {
@@ -102,8 +117,14 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		
 		
 		// var htmlString = 	'<div id="resultsList"> ' ;
-		var htmlString = "<h3>Search: <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3>";
-		htmlString += '<h3 class="ext-text">You Might Like:</h3>';
+
+// 		To move Search to be on the right column, uncomment this and comment out option two
+//		var htmlString = "<h3 class='ext-text'>Search: <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3>";
+//		htmlString += '<h3 class="ext-text">You Might Like:</h3>';
+
+//		option two + " <h3 class='ext-text'>Search: <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3> " is above What are Your Tastes?
+		var htmlString = '<h3 class="ext-text">You May Enjoy</h3>';
+
 		$.each(filteredDrinks, function(idx, obj){
 
 			var equipString = "<h5>Equipment Needed</h5><ul>";
@@ -118,8 +139,8 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 							    
 							    '<div class="secondary"> <p> '+equipString+' </p> </div>'+
 								
-								'<div class="primary"> <img width=90 height=73 src="images/resultImgs/'+obj.drinkName+'.png" alt="'+obj.drinkName+'"> </div>' +
-							    
+								'<div class="primary"> <img src="images/resultImgs/'+obj.drinkName+'.png" alt="'+obj.drinkName+'"> </div>' +
+							   
 							    '<div class="footer"> <p></p> </div>'+
 							'</div></a>'
 		})
@@ -127,9 +148,9 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			if(filteredDrinks.length == 0){
 			htmlString += 	'<div class="container" class="center">'+
 
-							    '<div class="primary"> <img src="images/begImgs/none.jpg" alt="none"> </div>'+
+							    '<div class="oops"> <img src="images/begImgs/oops.png" alt="oops!"> </div>'+
 							    
-							    '<div class="content"> <h3>Sorry no results found :(</h3></div>'+
+							    '<div class="error-message"> <p class="ext-text"><b>Sorry! We could not find any recipes.</b> <br /> Take a chance and try something new - we may have better luck if you change a preference.</p></div>'+
 							    
 							    '<div class="secondary"> <p>  </p> </div>'+
 							    
@@ -228,9 +249,8 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			
 <h1 class="ext-text" align=center>Find a Drink</h1>
 
-<p class="ext-text" align=center style="font-size: 14pt; margin-left: 12%; margin-right: 12%;">Welcome! On this page you can specify your taste in drinks and we will find coffee drinks for you.  Or, if you already know the name of the drink you are interested in, you can use the search bar below to find it.</p>
-<!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>
- -->
+<p class="ext-text" align=center style="font-size: 14pt; margin-left: 10%; margin-right: 10%;">Go ahead, tell us what you crave and we'll auto-magically show you coffee drinks that you might love. If you already know the name of the drink you are interested in, use the search to find it even faster. And come back anytime to learn about other recipes on your list.</p><br>
+<!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>-->
 <!-- <div id="filterArea" class="center ext-text">
 		<h2>Tell us how you'd like your drink by answering these 4 questions:</h2>
 		<div style="display:inline-block; color:white;">
@@ -265,6 +285,10 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
     </div> -->
 
 <div id="questions">
+
+<!-- part of option two in javascript -->
+<h3 class='ext-text'>Search <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3>
+
 <h3 class="ext-text">What Are Your Tastes?</h3>
 1. <b>Size</b>:<br>
 <input type="radio" name="drink-size" id="size-val1" value="any" checked /> No Preference <br />
@@ -295,7 +319,9 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 <input type="radio" name="temp" id="temp-val3" value="cold" /> Cold
 <br>
 
-<input type="button" value="Search" id="submit" /><br><br>
+<!--<input type="button" value="Search" id="submit" />-->
+
+<br><br>
 </div>
 
 <div id="resultsList" class="center"></div>
