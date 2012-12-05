@@ -113,7 +113,7 @@
     </script>
     <style>
 	.ui-tabs .ui-tabs-panel { background-color: #f5e49c; border-color: #f5e49c; }
-	#fundamentals { margin-left: auto; margin-right: auto; width: 75%; }
+	#fundamentals { margin-left: auto; margin-right: auto; width: 100%; }
 	body { background-color: #A27A47; padding-top: 0%; }
 	.ext_text { color: #f5e49c; }
     </style>
@@ -121,8 +121,12 @@
 </head>
 
 <body onload="initQuiz();">
-<a href="index.html"><img src="images/logo.png" /></a><br>
-<a href="index.html">Home</a> > Fundamentals <br>
+	
+	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
+	  <div id="container">
+		<a href="index.html"><img src="images/logo.png" /></a><br>
+		  <div id="wrapper">
+
 <h1 class="ext_text" align="center">Coffee Fundamentals</h1>
 <p class="ext_text" align=center>This page offers educational resources for new coffee drinkers.</p><br>
 <div id="fundamentals">
