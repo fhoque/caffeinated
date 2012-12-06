@@ -1,3 +1,8 @@
+<h1>Final Submission</h1>
+<a href="proj/index.html">View Final Project</a><br />
+<a href="slides.pdf">View Presentation PDF</a><br />
+<a href="slides/index.html">View Presentation Slides</a>
+
 <h1>Statement of Intent</h1>
 
 <h3>Team Handle</h3>
@@ -12,7 +17,7 @@
 	<li><a href="https://github.com/fhoque" class="user-mention">Fatimah Hoque</a></li>
 	<li><a href="https://github.com/Matthias-Mohammod" class="user-mention">Matthias Mohammod</a></li>
 </ul>
-
+		
 <h3>Project Pitch</h3>
 
 <p>Coffee. It’s the one drink no one can live without. It’s sold on the corner of every neighborhood in countries around the world.  It’s enjoyed by rich and poor alike and it seems that wherever you go, there’s always a special variety enjoyed by the locals. Whether its a latte or cappuccino, frappe or iced coffee, the vendors of these pick-me-ups know what they are doing.</p>  
