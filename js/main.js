@@ -4,13 +4,13 @@ $(document).ready(function(){
 		document.location.href='fundamentals.html';
 	}).hover(function(){
 			$("#imgHolder img").fadeOut(function() { 
-			  $(this).load(function() { $(this).fadeIn("fast"); }); 
+			  $(this).load(function() { $(this).fadeIn(); }); 
 			  $(this).attr("src", "images/fundamentals_description.png"); 
 			});
 		}, 
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
-			  $(this).load(function() { $(this).fadeIn("fast"); }); 
+			  $(this).load(function() { $(this).fadeIn(); }); 
 			  $(this).attr("src", "images/caffeinated.png"); 
 			});
 		}
@@ -21,13 +21,13 @@ $(document).ready(function(){
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
-			  $(this).load(function() { $(this).fadeIn("fast"); }); 
+			  $(this).load(function() { $(this).fadeIn(); }); 
 			  $(this).attr("src", "images/advanced_description.png"); 
 			});
 		}, 
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
-			  $(this).load(function() { $(this).fadeIn("fast"); }); 
+			  $(this).load(function() { $(this).fadeIn(); }); 
 			  $(this).attr("src", "images/caffeinated.png"); 
 			});
 		}
@@ -38,13 +38,13 @@ $(document).ready(function(){
 	}).hover(
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
-			  $(this).load(function() { $(this).fadeIn("fast"); }); 
+			  $(this).load(function() { $(this).fadeIn(); }); 
 			  $(this).attr("src", "images/beginners_description.png"); 
 			});
 		}, 
 		function(){
 			$("#imgHolder img").fadeOut(function() { 
-			  $(this).load(function() { $(this).fadeIn("fast"); }); 
+			  $(this).load(function() { $(this).fadeIn(); }); 
 			  $(this).attr("src", "images/caffeinated.png"); 
 			});
 		}
