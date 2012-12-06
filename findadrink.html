@@ -77,6 +77,8 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 #submit                             { margin: 15px 0 0 0px; font: 20px Helvetica, sans-serif; padding: 5px 10px 3px 10px; border: 1px solid black; background: #eee; }
 #submit:hover                       { background: #ccc; }
 </style>
+<link rel="stylesheet" type="text/css" href="css/pretty_buttons.css"/>
+
 <script>
 
 	var resultsList = [];  //holds drinks
@@ -237,6 +239,8 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			var v = $("input[type=radio]:checked"); 
 			filterJson("beginner", v[0].value, v[1].value, v[2].value, v[3].value ); 
 		})
+		$("#fundamentalsBtn").click(function(){ document.location.href = "fundamentals.html" ; })
+		$("#finddrinksBtn").click(function(){ document.location.href = "findadrink.html" ; })
 	})
 </script>
 </head>
@@ -244,7 +248,28 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 	
 	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
 	  <div id="container">
-		<a href="index.html"><img id="logo" src="images/logo.png" /></a><br>
+<!-- 		<span> 
+ -->	    	<div> 
+	    		<div>
+				    <a href="index.html">
+				    <img id="logo" src="images/logo.png">
+				    </a>
+				</div>
+					<div style="position: absolute; left: 3%; top: 43%;">
+			    	<div>
+				    <button id="fundamentalsBtn" class="cssButton_roundedMed cssButton_lightBrown">
+				        <a href="fundamentals.html"><font color="#ffeeee"> FUNDAMENTALS </font></a>
+				    </button>
+					</div>
+					<div>
+				    <button id="finddrinksBtn" class="cssButton_roundedMed cssButton_lightBrown">
+				        <a href="findadrink.html"><font color="#ffeeee"> FIND A DRINK </font>    </a>
+				    </button>
+					</div>
+				</div>
+			</div>
+		<!-- </span> -->
+		<br>
 		  <div id="wrapper">
 			
 <h1 class="ext-text" align=center>Find a Drink</h1>

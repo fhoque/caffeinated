@@ -99,7 +99,7 @@
 			"question" 	: 	"Which of these diagrams represents a Caffe Latte?",
 
 			"c1" : { 	"pic"		:	"images/matchingGame/q2c1.png",
-					 	"picName"	: 	"Cappuccino"
+					 	"picName"	: 	"Cappuccino - notice difference in milk foam"
 			},
 			"c2" : { 	"pic"		:	"images/matchingGame/q2c2.png",
 					 	"picName"	: 	"Cafe Latte"
