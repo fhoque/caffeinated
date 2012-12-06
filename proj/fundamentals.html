@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- Le styles -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="bootstrap/css/docs.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+
+<title>Fundamentals - Get Me Caffeinated!</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/pretty_buttons.css"/>
+<script>
+
+	var quiz = {"question": [
+			{"text": "Which of the following is a stimulant often found in coffee?", "A": "Milk", "B": "Sugar", "C": "Caffeine", "D": "Cream", "answer": "C"},
+			{"text": "What material is usually used to make coffee filters?", "A": "Disposable Paper", "B": "Aluminum Foil", "C": "Stainless Steel", "D": "Plastic", "answer": "A"},
+			{"text": "The seeds of which plant are used to make coffee?", "A": "Acacia", "B": "Coffea", "C": "Ginseng", "D": "Pomegrante", "answer": "B"},
+			{"text": "Which of these places is NOT a major area of coffee cultivation?", "A": "South America", "B": "Western Europe", "C": "Central Africa", "D": "Southeast Asia", "answer": "B"}
+		]
+	};
+	
+	var cur_question = 0;
+	var correct_answers = 0;
+	var answered = false;
+	
+	function initQuiz()
+	{
+		var quiz_html = "";
+		quiz_html += '<h3 align=center>Test Your Coffee Knowledge</h3>';
+		quiz_html += '<p align=center>This quiz will test your knowledge of coffee facts and terminology.<br><br><br>';
+		quiz_html += '<input align=center type="button" onclick="loadQuiz(0);" value="Start Quiz" />';
+		var quiz_div = document.getElementById("quiz");
+		quiz_div.innerHTML = quiz_html;
+	}
+	
+	function loadQuiz(q)
+	{
+		var quiz_html = "";
+		quiz_html += quiz.question[q].text + "<br /> <br />";
+		quiz_html += '<label><input type="radio" id="choice_a" name="answer" value="A"> A. ' + quiz.question[q].A + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_b" name="answer" value="B"> B. ' + quiz.question[q].B + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_c" name="answer" value="C"> C. ' + quiz.question[q].C + '</label><br>';
+		quiz_html += '<label><input type="radio" id="choice_d" name="answer" value="D"> D. ' + quiz.question[q].D + '</label><br>';
+		quiz_html += '<input type="button" id="quiz_button" value="Submit Answer" onclick="answer();">';
+		var quiz_div = document.getElementById("quiz");
+		quiz_div.innerHTML = quiz_html;
+	}
+	
+	function answer()
+	{
+		if(answered) return;
+	
+		var correct = false;
+		var choices = new Array();
+		choices[0] = document.getElementById("choice_a");
+		choices[1] = document.getElementById("choice_b");
+		choices[2] = document.getElementById("choice_c");
+		choices[3] = document.getElementById("choice_d");
+	
+		for(var i = 0; i < choices.length; i++)
+		{
+			if(choices[i].checked && choices[i].value == quiz.question[cur_question].answer)
+				correct = true;
+		}
+		
+		var quiz_div = document.getElementById("quiz");
+		var quiz_button = document.getElementById("quiz_button");
+		
+		if(correct)
+		{
+			quiz_div.innerHTML += '<span style="color: green"> Correct!</span> <br />';
+			correct_answers++;
+		}
+		else
+
+			
+		quiz_div.innerHTML += '<span style="color: red"> The correct answer is ' + quiz.question[cur_question].answer + '.</span><br />';
+
+		quiz_div.innerHTML += ' <input type="button" onclick="nextQuizQuestion();" value="Next Question" />';
+		
+		answered = true;
+		
+	}
+	
+	function nextQuizQuestion()
+	{
+		cur_question++;
+		answered = false;
+		
+		if(cur_question < quiz.question.length)
+			loadQuiz(cur_question);
+		else
+		{
+			var quiz_div = document.getElementById("quiz");
+			quiz_div.innerHTML = "<h4>Quiz Complete!</h4>You got " + correct_answers + " out of " + quiz.question.length + " questions correct. <br /> <a style='color: #78310e; text-decoration: underline;' href='findadrink.html'>Perhaps you would like to search for a drink recipe?</a>";
+		}
+	}
+
+    $(function() {
+        $( "#fundamentals" ).tabs();
+		$("#terminology").accordion({
+			heightStyle: "content"
+		});
+    });
+    $(document).ready(function(){
+		$("#game_tab").load("match.html");
+		$("#fundamentalsBtn").click(function(){ document.location.href = "fundamentals.html" ; })
+		$("#finddrinksBtn").click(function(){ document.location.href = "findadrink.html" ; })
+    })
+    </script>
+    <style>
+	.ui-tabs .ui-tabs-panel { background-color: #ebd5a9; border-color: #f5e49c; }
+	#fundamentals { margin-left: auto; margin-right: auto; width: 100%; }
+	body { background-color: #A27A47; padding-top: 0%; }
+	.ext_text { color: #3e1e17; }
+	.coffee-term { text-align: left; }
+    </style>
+	
+</head>
+
+<body onload="initQuiz();">
+	
+	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
+	  <div id="container">
+			
+		<div style=""> 
+		    		<div style="float: left; position: absolute;">
+					    <a style="float: left;" href="index.html">
+					    <img id="logo" src="images/logo.png" style="margin: 0;">
+					    </a>
+		<div style="">
+				    	<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="fundamentalsBtn">
+					        <a href="fundamentals.html"><font color="#ffeeee"> FUNDAMENTALS </font></a>
+					    </button>
+						</div>
+						<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="finddrinksBtn">
+					        <a href="findadrink.html"><font color="#ffeeee"> &nbsp; FIND A DRINK &nbsp; </font>    </a>
+					    </button>
+						</div>
+					</div>
+					</div>
+						
+		</div>
+		<br>
+		  <div id="wrapper" style="margin-top: 180px;">
+
+<h1 class="ext_text" align="center">Coffee Fundamentals</h1>
+<p class="ext_text" align=center>This page offers educational resources for new coffee drinkers.</p><br>
+<div id="fundamentals">
+	<ul style="font-size: 10pt;">
+		<li><a href="#intro_tab">What is Coffee?</a></li>
+		<!--<li><a href="#prep_tab">Preparing Your First Cup</a></li>-->
+		<li><a href="#term_tab">Learn Coffee Terminology</a></li>
+		<li><a href="#quiz_tab">Test Your Coffee Knowledge</a></li>
+		<li><a href="#game_tab">Play A Matching Game</a></li>
+	</ul>
+	<div id="intro_tab">
+		<h2 align=center>What is Coffee?</h2>
+		<p>Coffee is a brewed beverage prepared from "Coffee Beans", which are the roasted seeds of the Coffea plant.  It is one of the most
+		commonly consumed beverages in the world.  People prepare coffee at home, often using a coffeemaker, or purchase coffee drinks at
+		coffeehouses.
+		<p>According to historical records, the stimulating effects of coffee were first discovered in Ethiopia, and coffee was first consumed
+		on a large scale in the Middle East.  Starting from the 16th century, coffee was exported to many other parts of the world, and it gained 
+		a reputation for its supposed curative effects.  Since then, coffee has become one of the most widely traded commodities in the world.  Coffee Beans
+		are typically cultivated in South America, Central Africa, and Southeast Asia.  These beans are then traded and sold around the world.
+		<p>Coffee is often known for its energizing effect, which is the result of the high caffeine content of most coffee drinks.  This
+		property explains why so many people around the world start their day with a cup of coffee.
+		<p>Coffee comes in many varieties: from hot coffee to iced coffee, from decaf to espresso, from black coffee to lattes, there is
+		a coffee drink for everyone.  This site will teach you about the many different types of coffee and show you how to prepare these drinks
+		at home.  
+	</div>
+	<!--<div id="prep_tab">
+		<h3>Preparing Your First Cup of Coffee</h3>
+		<p>If you have never prepared coffee before, it is easy to get started. You will need a few things first:
+		<table align=center border=2><tr><th>Coffeemaker</th><th>Coffee Grounds</th><th>Coffee filter</th><th>Cold Water</th></tr>
+		<tr><td><img width=100 height=100 src="images/coffeemaker.jpg"></td><td><img width=100 height=100 src="images/coffeegrounds.jpg"></td>
+		<td><img width=100 height=100 src="images/coffeefilters.jpg"></td><td><img width=100 height=100 src="images/coldwater.jpg"></td></tr></table>
+		<br><br>
+		<p>You can purchase coffee grounds and coffee filters at any supermarket.  A coffeemaker can be purchased from most department stores.  
+		Once you have these materials, you are ready to make your first cup of coffee!
+		<br><br>
+		<b>Step 1:</b>
+		<p>Place the coffee filter in the coffee filter container on top of the coffeemaker.  Note that some coffee makers come with permanent 
+		filters, so you should consult your owner's manual before using a disposable coffee filter.
+		<br><br>
+		<b>Step 2:</b>
+		<p>Insert coffee grounds into the coffee filter.  You should insert a tablespoon of coffee grounds for every cup (8 ounces) that you 
+		plan to prepare.
+		<br><br>
+		<b>Step 3:</b>
+		<p>Fill the coffeemaker pot with cold water equal to the amount of cups you plan to make.  You can use the markings on the pot or the
+		cup you plan to drink from in order to measure the water.
+		<br><br>
+		<b>Step 4:</b>
+		<p>Pour the water in the pot into the water container at the top of the coffeemaker.  Make sure not to spill any!
+		<br><br>
+		<b>Step 5:</b>
+		<p>Place the coffee pot on its stand and close the water container.
+		<br><br>
+		<b>Step 6:</b>
+		<p>Press the start button on your coffee maker.
+		<br><br>
+		
+		Once the coffee maker is done brewing the coffee, pour it into your coffee mug and enjoy!
+		
+		Now that you know how to make a simple cup of coffee, <a style="color: #78310e; text-decoration: underline;" href="findadrink.html">perhaps you would like to search for a recipe.</a>
+	</div>-->
+	
+	<div id="term_tab">
+		<h3>Learn Coffee Terminology</h3>
+		<p align="center">Here you can find a listing of coffee terminology.</p>
+		<div id="terminology">
+			<h3 class="coffee-term">Caffeine</h3>
+			<div>
+				<p>
+				A stimulant which can temporarily ward off drowsiness and raise alertness.
+				</p>
+			</div>
+			<h3 class="coffee-term">Cappuccino</h3>
+			<div>
+				<p>
+				A coffee drink that is prepared with hot milk, steamed milk foam, and espresso.
+				</p>
+				<img src="images/resultImgs/cappuccino.png" />
+			</div>
+			<h3 class="coffee-term">Coffee</h3>
+			<div>
+				<p>
+				A brewed beverage which is prepared from the roasted seeds of the Coffea plant.
+				</p>
+			</div>
+			<h3 class="coffee-term">Coffee Bean</h3>
+			<div>
+				<p>
+				The seed of a coffee plant. Unprocessed coffee beans are roasted in the process of preparing coffee.
+				</p>
+			</div>
+			<h3 class="coffee-term">Coffee Grounds</h3>
+			<div>
+				<p>
+				Coffee beans that have been crushed.  These are used with a coffeemaker to brew coffee.  The consistency of the
+				coffee grounds effects the type of drink that will be brewed.
+				</p>
+			</div>
+			<h3 class="coffee-term">Coffeemaker</h3>
+			<div>
+				<p>
+				An appliance which is used to brew coffee.  This machine allows for the preparation of coffee without having to boil water in a separate container.  Also known as a "Coffee Machine".
+				</p>
+				<img src="images/coffeemaker.jpg" />
+			</div>
+			<h3 class="coffee-term">Decaf</h3>
+			<div>
+				<p>
+				A term used to refer to coffee drinks whose caffeine content has been removed.  Decaf coffee may still contain some caffeine content,
+				but it is a very small quantity compared to regular coffee.
+				</p>
+			</div>
+			<h3 class="coffee-term">Demitasse</h3>
+			<div>
+				<p>
+				A small cup which can typically hold about 2-3 fluid ounces.  A Demitasse is most commonly used for serving espresso and turkish coffee.
+				</p>
+			</div>
+			<h3 class="coffee-term">Espresso</h3>
+			<div>
+				<p>
+				A concentrated drink which is brewed by forcing a small amount of boiling water through ground coffee beans.  Espresso is typically 
+				served in a smaller quantity than regular coffee; typically less than 2 fluid ounces.  It is the basis for many other coffee drinks, 
+				including lattes, cappuccino, and macchiato.
+				</p>
+				<img src="images/resultImgs/espresso.png" />
+			</div>
+			<h3 class="coffee-term">Espresso Machine</h3>
+			<div>
+				<p>
+				A machine specifically designed for the preparation of espresso.  Because espresso requires specific conditions with regard to pressure,
+				this specialized machine must be used to brew espresso as opposed to a regular coffeemaker.
+				</p>
+			</div>
+			<h3 class="coffee-term">Filter</h3>
+			<div>
+				<p>
+				A utensil used in coffee brewing to remove organic components. Filters are most often made with disposable paper, but can also be made of stainless steel for brewing certain types of coffee drinks.
+				</p>
+				<img src="images/coffeefilters.jpg" />
+			</div>
+			<h3 class="coffee-term">Iced Coffee</h3>
+			<div>
+				<p>
+				A coffee drink that is prepared by pouring brewed coffee into ice or ice-cold milk.
+				</p>
+				<img src="images/resultImgs/iced coffee.png" />
+			</div>
+			<h3 class="coffee-term">Latte</h3>
+			<div>
+				<p>
+				A coffee drink prepared with steamed milk and espresso. There are generally two main varients of this drink: a <i>Caffe Latte</i>
+				and a <i>Latte Macchiato</i>.  In a Caffe Latte, milk is added to espresso to prepare the drink.  In a Latte Macchiato it is the
+				reverse: a smaller amount of espresso is added to milk.
+				</p>
+				<img src="images/resultImgs/caffe latte.png" />
+			</div>
+		</div>
+	</div>
+	<div id="quiz_tab">
+		<div id="quiz"></div>
+	</div>
+	<div id="game_tab">
+		<!-- Matching game div goes here -->
+	</div>
+</div>
+
+<br><br><br>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/application.js"></script>
+<script src="bootstrap/js/bootswatch.js"></script>
+
+</body>
+
+</html>

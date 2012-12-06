@@ -1,0 +1,74 @@
+.cssButton_lightBrown, .cssButton_lightBrown:focus {
+    background-color: #AC7D5E;
+    background-image: -moz-linear-gradient(center top , #C58B64 0px, #83583B 100%);
+    border-bottom-color: #C58B64;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: #C58B64;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: #C58B64;
+    border-top-color: #C58B64;
+    color: !important #FFEEEE;
+    text-shadow: 0 1px 5px #AC7D5E;
+}
+.cssButton_lightBrown:hover {
+    background-color: #C58B64;
+    background-image: -moz-linear-gradient(center top , #C58B64 0px, #AC7D5E 100%);
+}
+.cssButton_lightBrown:active {
+    background-color: #83583B;
+    background-image: -moz-linear-gradient(center top , #83583B 0px, #D4956B 100%);
+}
+.cssButton_roundedMed {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.cssButton_rectangle, .cssButton_roundedLow, .cssButton_roundedMed, .cssButton_roundedHigh {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: solid;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 1px;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: solid;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.796) inset;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'PT Sans',Arial,'Trebuchet MS',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    line-height: normal;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}

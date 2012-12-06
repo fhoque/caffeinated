@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Find a drink - Get Me Caffeinated!</title>
+
+<!-- Le styles -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="bootstrap/css/docs.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+<script src="js/jquery_cookie.js"></script>
+<style>
+body { padding-top: 0%; background-color: #A27A47; }
+
+.ext-text { color: #3e1e17; }
+
+#questions { color: #3e1e17; font-size: 12pt; float: left; width: 35%; }
+#resultsList { float: right; width: 56%;}
+
+.question { padding-left: 40%; }
+
+.container {
+    width: 500px;
+    margin: 25px auto;
+    border: gray solid 10px;
+	background-color: #ebd5a9;
+	font-size: 10pt;
+	padding: 0 5px 0 5px;
+}
+
+.primary {
+    float: left;
+    width: 120px;
+	margin: -10px 0 10px 22px;
+}
+
+.oops {
+    float: left;
+    width: 135px;
+	margin: 25px 0 -5px 25px;
+}
+
+.error-message {
+	float: right;
+	margin: -100px 0 0 190px;
+}
+
+.content {
+    float: left;
+    width: 480px;
+	padding: 5px 5px 0 5px;
+}
+
+.secondary {
+    float: left;
+    width: 340px;
+	padding: 0 5px 5px 5px;
+}
+
+.footer {
+    clear: both;
+}
+
+.result 							{ color: black; }
+#page-wrap		                    { width: 500px; margin: 25px auto; }
+
+form                                { margin: 50px 0 0 0; }
+label                               { font: bold 20px Helvetica, sans-serif; display: block; float: left; text-align: right; padding: 5px 10px 0 0; width: 240px; }
+form.myformdiv div.myformdiv                            { overflow: hidden; margin: 0 0 5px 0; }
+.button                             { margin: 0 0 0 5px; text-indent: -9999px; cursor: pointer; width: 29px; height: 29px; float: left; text-align: center; background: url(http://css-tricks.com/examples/InputNumberIncrementer/images/buttons.png) no-repeat; }
+.dec                                { background-position: 0 -29px; }
+#submit                             { margin: 15px 0 0 0px; font: 20px Helvetica, sans-serif; padding: 5px 10px 3px 10px; border: 1px solid black; background: #eee; }
+#submit:hover                       { background: #ccc; }
+</style>
+<link rel="stylesheet" type="text/css" href="css/pretty_buttons.css"/>
+
+<script>
+
+	var resultsList = [];  //holds drinks
+
+	/**
+	takes user input and filters through available drink matches.  
+	*/
+	function filterJson(searchType, arg1, arg2, arg3, arg4){
+		var letter =  $("#drinkTxt").val(); 
+		var filteredDrinks = [];
+
+		if(searchType == "advanced"){
+			$.each(resultsList, function(idx, obj){
+				if( obj.drinkName.toLowerCase().substring(0, letter.length) == letter.toLowerCase() ){
+					filteredDrinks.push(obj);	
+				}
+			})			
+		}else if(searchType == "beginner"){
+
+			$.each(resultsList, function(idx, obj){
+					console.log(obj.drinkSize + " " +obj.caffeine + " " +obj.milk + " " +obj.temp)
+					console.log(arg1 + " " +arg2 + " " +arg3 + " " +arg4)
+				if( 	(obj.drinkSize 	== 	arg1 	|| 	arg1 == "any")
+					&&  (obj.caffeine 	== 	arg2 	|| 	arg2 == "any")
+					&& 	(obj.milk 		== 	arg3 	|| 	arg3 == "any")
+					&& 	(obj.temp 		== 	arg4 	|| 	arg4 == "any")
+					){
+					filteredDrinks.push(obj);	
+				}
+			})
+		}
+		else if(searchType == "cookie")
+		{
+			filteredDrinks = JSON.parse($.cookie("drink-list"));
+		}
+		
+		$.cookie("drink-list", JSON.stringify(filteredDrinks), { expires: 30 });
+		
+		
+		// var htmlString = 	'<div id="resultsList"> ' ;
+
+// 		To move Search to be on the right column, uncomment this and comment out option two
+//		var htmlString = "<h3 class='ext-text'>Search: <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3>";
+//		htmlString += '<h3 class="ext-text">You Might Like:</h3>';
+
+//		option two + " <h3 class='ext-text'>Search: <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3> " is above What are Your Tastes?
+		var htmlString = '<h3 class="ext-text">You May Enjoy</h3>';
+
+		$.each(filteredDrinks, function(idx, obj){
+
+			var equipString = "<h5>Equipment Needed</h5><ul>";
+			$.each(obj.equip, function(idx, obj){
+				equipString += '<li>'+obj+'</li>';
+			})
+			equipString += "</ul>";
+
+			htmlString += 	'<a class="result" href="'+obj.slideshow+'"><div class="container" class="center">'+
+							    
+							    '<div class="content"> <h5>'+obj.drinkName+'</h5><p>'+obj.description+'</p> </div>'+
+							    
+							    '<div class="secondary"> <p> '+equipString+' </p> </div>'+
+								
+								'<div class="primary"> <img src="images/resultImgs/'+obj.drinkName.toLowerCase()+'.png" alt="'+obj.drinkName+'"> </div>' +
+							   
+							    '<div class="footer"> <p></p> </div>'+
+							'</div></a>'
+		})
+
+			if(filteredDrinks.length == 0){
+			htmlString += 	'<div class="container" class="center">'+
+
+							    '<div class="oops"> <img src="images/begImgs/oops.png" alt="oops!"> </div>'+
+							    
+							    '<div class="error-message"> <p class="ext-text"><b>Sorry! We could not find any recipes.</b> <br /> Take a chance and try something new - we may have better luck if you change a preference.</p></div>'+
+							    
+							    '<div class="secondary"> <p>  </p> </div>'+
+							    
+							    '<div class="footer"> <p></p> </div>'+
+							'</div>'
+			}
+			htmlString += '</div>';
+			$("#resultsList").html( htmlString )
+	}
+
+
+	var sizeArr = ["any", "small", "medium", "large"]
+	var caffArr = ["any", "a little", "moderate", "a lot"];
+	var milkArr = ["any", "none", "a little", "a lot"];
+	var tempArr = ["any", "hot", "cold"];
+	var categoryObj = {
+		"sizeArr" : sizeArr,
+		"caffArr" : caffArr,
+		"milkArr" : milkArr, 
+		"tempArr" : tempArr
+	}
+	function valToggle(category, plusMinus){
+		//find current value of this category
+		var catVal = $("#"+category+"-val").val();
+		//find appropriate array of values for this category
+		var catArr = categoryObj[category+"Arr"];
+		var idx = catArr.indexOf(catVal);
+		console.log("catVal: "+catVal+" catArr " + catArr+" idx: "+idx);
+		if(plusMinus == 'incr'){
+			if(idx == catArr.length - 1)
+				idx = catArr.length - 1;
+			else
+				++idx;
+		}
+		else if(plusMinus == 'decr'){
+			if(idx == 0)
+				idx = 0;
+			else
+				--idx;
+		}
+		$("#"+category+"-val").val(catArr[idx]);
+	}
+
+
+	$(document).ready(function(){
+		$.ajaxSetup({ async : false} );
+	    $.getJSON("drink-results.json", function(data){
+	         $.each(data.results, function(idx, obj){ 
+	         	resultsList.push(obj);
+	         });
+		});
+		
+		if($.cookie("drink-list") !== null)
+			filterJson("cookie", "", "", "", "");
+			
+		if($.cookie("coffee-answers") !== null)
+		{
+			var answer_string = $.cookie("coffee-answers");
+			var answers = answer_string.split(",");
+			for(var i = 0; i < answers.length; i++)
+			{
+				$('#' + answers[i]).prop('checked', true);
+			}
+		}
+		
+		$("#sizeIncr").click( function(){ valToggle('size', 'incr') } );
+		$("#sizeDecr").click( function(){ valToggle('size', 'decr') } );
+
+		$("#caffIncr").click( function(){ valToggle('caff', 'incr') } );
+		$("#caffDecr").click( function(){ valToggle('caff', 'decr') } );
+
+		$("#milkIncr").click( function(){ valToggle('milk', 'incr') } );
+		$("#milkDecr").click( function(){ valToggle('milk', 'decr') } );
+
+		$("#tempIncr").click( function(){ valToggle('temp', 'incr') } );
+		$("#tempDecr").click( function(){ valToggle('temp', 'decr') } );
+
+		$("#submit").click(function(){
+			var arg1 = $("input[name='drink-size']:checked").val().toLowerCase();
+			var arg2 = $("input[name='caff-content']:checked").val().toLowerCase();
+			var arg3 = $("input[name='milk-content']:checked").val().toLowerCase();
+			var arg4 = $("input[name='temp']:checked").val().toLowerCase();
+			filterJson("beginner", arg1, arg2, arg3, arg4);
+			
+			
+		});
+		$("#drinkTxt").keyup(function(){
+			filterJson("advanced");
+		})
+		$("input[type=radio]").click(function() { 
+			var v = $("input[type=radio]:checked"); 
+			filterJson("beginner", v[0].value, v[1].value, v[2].value, v[3].value ); 
+			
+			var answers = v[0].id+","+v[1].id+","+v[2].id+","+v[3].id;
+			$.cookie("coffee-answers", answers, { expires: 30 });  
+		})
+		$("#fundamentalsBtn").click(function(){ document.location.href = "fundamentals.html" ; })
+		$("#finddrinksBtn").click(function(){ document.location.href = "findadrink.html" ; })
+	})
+</script>
+</head>
+<body>
+	
+	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
+	  <div id="container">
+
+		<div style=""> 
+		    		<div style="float: left; position: absolute;">
+					    <a style="float: left;" href="index.html">
+					    <img id="logo" src="images/logo.png" style="margin: 0;">
+					    </a>
+		<div style="">
+				    	<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="fundamentalsBtn">
+					        <a href="fundamentals.html"><font color="#ffeeee"> FUNDAMENTALS </font></a>
+					    </button>
+						</div>
+						<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="finddrinksBtn">
+					        <a href="findadrink.html"><font color="#ffeeee"> &nbsp; FIND A DRINK &nbsp; </font>    </a>
+					    </button>
+						</div>
+					</div>
+					</div>
+						
+		</div>
+		<br>
+		  <div id="wrapper">
+			
+<h1 class="ext-text" align=center>Find a Drink</h1>
+
+<p class="ext-text" align=center style="font-size: 14pt; margin-left: 10%; margin-right: 10%;">Go ahead, tell us what you crave and we'll auto-magically show you coffee drinks that you might love. If you already know the name of the drink you are interested in, use the search to find it even faster. And come back anytime to learn about other recipes on your list.</p><br>
+<!-- <p class="ext-text" align=center>Here, you can specify your drink tastes and we will find the coffee drink for you.</p><br>-->
+<!-- <div id="filterArea" class="center ext-text">
+		<h2>Tell us how you'd like your drink by answering these 4 questions:</h2>
+		<div style="display:inline-block; color:white;">
+			Or, if you've been here before, simply enter the name of a drink you'd like to try: 
+			<input id="drinkTxt" type="text" style="float:right !important"/>
+		</div>
+</div> -->
+
+    <!-- <div class="myformdiv">
+        <label for="name">Drink Size</label>
+        <input type="text" readonly="readonly" name="drink-size" id="size-val" value="any"/>
+        <div id="sizeIncr" class="inc button">+</div>
+        <div id="sizeDecr" class="dec button">-</div>
+    </div>
+    <div class="myformdiv">
+        <label for="name">Caffeine Content</label>
+        <input type="text" readonly="readonly" name="caff-content" id="caff-val" value="any"/>
+        <div id="caffIncr" class="inc button">+</div>
+        <div id="caffDecr" class="dec button">-</div>
+    </div>
+    <div class="myformdiv">
+        <label for="name">Milk Content</label>
+        <input type="text" readonly="readonly" name="milk-content" id="milk-val" value="any" />
+        <div id="milkIncr" class="inc button">+</div>
+        <div id="milkDecr" class="dec button">-</div>
+    </div>
+    <div class="myformdiv">
+        <label for="name">Temperature</label>
+        <input type="text" readonly="readonly" name="temp" id="temp-val" value="any" />
+        <div id="tempIncr" class="inc button">+</div>
+        <div id="tempDecr" class="dec button">-</div>
+    </div> -->
+
+<div id="questions">
+
+<!-- part of option two in javascript -->
+<h3 class='ext-text'>Search <input id='drinkTxt' type='text' placeholder='enter drink name'/></h3>
+
+<h3 class="ext-text">What Are Your Tastes?</h3>
+1. <b>Size</b>:<br>
+<input type="radio" name="drink-size" id="size-val1" value="any" checked /> No Preference <br />
+<input type="radio" name="drink-size" id="size-val2" value="small" /> Small <br />
+<input type="radio" name="drink-size" id="size-val3" value="medium" /> Medium <br />
+<input type="radio" name="drink-size" id="size-val4" value="large" /> Large
+<br><br>
+
+2. Amount of <b>caffeine</b>?:<br>
+<input type="radio" name="caff-content" id="caff-val1" value="any" checked /> No Preference <br />
+<input type="radio" name="caff-content" id="caff-val2" value="none" /> None <br />
+<input type="radio" name="caff-content" id="caff-val3" value="small" /> A small amount <br />
+<input type="radio" name="caff-content" id="caff-val4" value="medium" /> A moderate amount <br />
+<input type="radio" name="caff-content" id="caff-val" value="large" /> A large amount
+<br><br>
+
+3. Amount of <b>milk</b>:<br>
+<input type="radio" name="milk-content" id="milk-val1" value="any" checked /> No Preference <br />
+<input type="radio" name="milk-content" id="milk-val2" value="none" /> None <br />
+<input type="radio" name="milk-content" id="milk-val3" value="small" /> A small amount <br />
+<input type="radio" name="milk-content" id="milk-val4" value="medium" /> A moderate amount <br />
+<input type="radio" name="milk-content" id="milk-val" value="large" /> A large amount
+<br><br>
+
+4. <b>Temperature</b>:<br>
+<input type="radio" name="temp" id="temp-val1" value="any" checked /> No Preference <br />
+<input type="radio" name="temp" id="temp-val2" value="hot" /> Hot <br />
+<input type="radio" name="temp" id="temp-val3" value="cold" /> Cold
+<br>
+
+<!--<input type="button" value="Search" id="submit" />-->
+
+<br><br>
+</div>
+
+<div id="resultsList" class="center"></div>
+
+
+
+    
+	<!--<div id="resultsList"> <p class="ext-text" align=center>Your results will be displayed below.</p> </div>-->
+	
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/application.js"></script>
+<script src="bootstrap/js/bootswatch.js"></script>
+
+</div>
+</div>
+</body>
+</html>

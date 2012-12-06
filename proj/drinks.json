@@ -1,0 +1,36 @@
+{
+    "drinks": [
+        {
+            "name": "Latte Macchiato",
+            "temperature": 6,
+            "caffeine": 9,
+            "sugar": 8,
+            "milk": 7,
+            "strength": 9
+        },
+        {
+            "name": "Caffe Latte",
+            "temperature": 6,
+            "caffeine": 9,
+            "sugar": 8,
+            "milk": 7,
+            "strength": 9
+        },
+        {
+            "name": "Long Black",
+            "temperature": 6,
+            "caffeine": 9,
+            "sugar": 8,
+            "milk": 3,
+            "strength": 9
+        },
+        {
+            "name": "Caffe Americano",
+            "temperature": 6,
+            "caffeine": 9,
+            "sugar": 8,
+            "milk": 3,
+            "strength": 9
+        }
+    ]
+}
