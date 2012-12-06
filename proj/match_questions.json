@@ -52,13 +52,13 @@
 			"question" 	: 	"Which is the espresso grind? ",
 
 			"c1" : { 	"pic"		:	"images/matchingGame/q3c1.jpg",
-					 	"picName"	: 	"Drip brew grind (coarse)"
+					 	"picName"	: 	"Drip grind (coarse)"
 			},
 			"c2" : { 	"pic"		:	"images/matchingGame/q3c2.jpg",
 					 	"picName"	: 	"Espresso grind (fine)"
 			},
 			"c3" : { 	"pic"		:	"images/matchingGame/q3c3.jpg", 	
-						"picName"	: 	"Whole beans (roasted)"
+						"picName"	: 	"Whole beans"
 			},
 			
 			"answer" 	: 	"c2"
@@ -131,13 +131,13 @@
 			"question" 	: 	"Pick the drip grind: ",
 
 			"c1" : { 	"pic"		:	"images/matchingGame/q3c1.jpg",
-					 	"picName"	: 	"Drip brew grind (coarse)"
+					 	"picName"	: 	"Drip grind (coarse)"
 			},
 			"c2" : { 	"pic"		:	"images/matchingGame/q3c2.jpg",
 					 	"picName"	: 	"Espresso grind (fine)"
 			},
 			"c3" : { 	"pic"		:	"images/matchingGame/q3c3.jpg", 	
-						"picName"	: 	"Whole beans (roasted)"
+						"picName"	: 	"Whole beans"
 			},
 			
 			"answer" 	: 	"c1"

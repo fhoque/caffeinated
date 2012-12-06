@@ -20,7 +20,7 @@ body { padding-top: 0%; background-color: #A27A47; }
 .ext-text { color: #3e1e17; }
 
 #questions { color: #3e1e17; font-size: 12pt; float: left; width: 35%; }
-#resultsList { float: right; width: 50%;}
+#resultsList { float: right; width: 56%;}
 
 .question { padding-left: 40%; }
 
@@ -77,6 +77,8 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 #submit                             { margin: 15px 0 0 0px; font: 20px Helvetica, sans-serif; padding: 5px 10px 3px 10px; border: 1px solid black; background: #eee; }
 #submit:hover                       { background: #ccc; }
 </style>
+<link rel="stylesheet" type="text/css" href="css/pretty_buttons.css"/>
+
 <script>
 
 	var resultsList = [];  //holds drinks
@@ -205,6 +207,16 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		
 		if($.cookie("drink-list") !== null)
 			filterJson("cookie", "", "", "", "");
+			
+		if($.cookie("coffee-answers") !== null)
+		{
+			var answer_string = $.cookie("coffee-answers");
+			var answers = answer_string.split(",");
+			for(var i = 0; i < answers.length; i++)
+			{
+				$('#' + answers[i]).prop('checked', true);
+			}
+		}
 		
 		$("#sizeIncr").click( function(){ valToggle('size', 'incr') } );
 		$("#sizeDecr").click( function(){ valToggle('size', 'decr') } );
@@ -225,10 +237,7 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 			var arg4 = $("input[name='temp']:checked").val().toLowerCase();
 			filterJson("beginner", arg1, arg2, arg3, arg4);
 			
-			var id1 = $("input[name='drink-size']:checked").id();
-			var id2 = $("input[name='caff-content']:checked").id();
-			var id3 = $("input[name='milk-content']:checked").id();
-			var id4 = $("input[name='temp']:checked").id();
+			
 		});
 		$("#drinkTxt").keyup(function(){
 			filterJson("advanced");
@@ -236,7 +245,12 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 		$("input[type=radio]").click(function() { 
 			var v = $("input[type=radio]:checked"); 
 			filterJson("beginner", v[0].value, v[1].value, v[2].value, v[3].value ); 
+			
+			var answers = v[0].id+","+v[1].id+","+v[2].id+","+v[3].id;
+			$.cookie("coffee-answers", answers, { expires: 30 });  
 		})
+		$("#fundamentalsBtn").click(function(){ document.location.href = "fundamentals.html" ; })
+		$("#finddrinksBtn").click(function(){ document.location.href = "findadrink.html" ; })
 	})
 </script>
 </head>
@@ -244,7 +258,28 @@ form.myformdiv div.myformdiv                            { overflow: hidden; marg
 	
 	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
 	  <div id="container">
-		<a href="index.html"><img id="logo" src="images/logo.png" /></a><br>
+
+		<div style=""> 
+		    		<div style="float: left; position: absolute;">
+					    <a style="float: left;" href="index.html">
+					    <img id="logo" src="images/logo.png" style="margin: 0;">
+					    </a>
+		<div style="">
+				    	<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="fundamentalsBtn">
+					        <a href="fundamentals.html"><font color="#ffeeee"> FUNDAMENTALS </font></a>
+					    </button>
+						</div>
+						<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="finddrinksBtn">
+					        <a href="findadrink.html"><font color="#ffeeee"> &nbsp; FIND A DRINK &nbsp; </font>    </a>
+					    </button>
+						</div>
+					</div>
+					</div>
+						
+		</div>
+		<br>
 		  <div id="wrapper">
 			
 <h1 class="ext-text" align=center>Find a Drink</h1>

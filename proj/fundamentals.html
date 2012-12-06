@@ -14,13 +14,14 @@
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
+<link rel="stylesheet" type="text/css" href="css/pretty_buttons.css"/>
 <script>
 
 	var quiz = {"question": [
 			{"text": "Which of the following is a stimulant often found in coffee?", "A": "Milk", "B": "Sugar", "C": "Caffeine", "D": "Cream", "answer": "C"},
 			{"text": "What material is usually used to make coffee filters?", "A": "Disposable Paper", "B": "Aluminum Foil", "C": "Stainless Steel", "D": "Plastic", "answer": "A"},
 			{"text": "The seeds of which plant are used to make coffee?", "A": "Acacia", "B": "Coffea", "C": "Ginseng", "D": "Pomegrante", "answer": "B"},
-			{"text": "Which of these places in NOT a major area of coffee cultivation?", "A": "South America", "B": "Western Europe", "C": "Central Africa", "D": "Southeast Asia", "answer": "B"}
+			{"text": "Which of these places is NOT a major area of coffee cultivation?", "A": "South America", "B": "Western Europe", "C": "Central Africa", "D": "Southeast Asia", "answer": "B"}
 		]
 	};
 	
@@ -109,6 +110,8 @@
     });
     $(document).ready(function(){
 		$("#game_tab").load("match.html");
+		$("#fundamentalsBtn").click(function(){ document.location.href = "fundamentals.html" ; })
+		$("#finddrinksBtn").click(function(){ document.location.href = "findadrink.html" ; })
     })
     </script>
     <style>
@@ -116,6 +119,7 @@
 	#fundamentals { margin-left: auto; margin-right: auto; width: 100%; }
 	body { background-color: #A27A47; padding-top: 0%; }
 	.ext_text { color: #3e1e17; }
+	.coffee-term { text-align: left; }
     </style>
 	
 </head>
@@ -124,8 +128,29 @@
 	
 	<img alt="full screen background image" src="background.jpeg" id="full-screen-background-image" /> 
 	  <div id="container">
-		<a href="index.html"><img id="logo" src="images/logo.png" /></a><br>
-		  <div id="wrapper">
+			
+		<div style=""> 
+		    		<div style="float: left; position: absolute;">
+					    <a style="float: left;" href="index.html">
+					    <img id="logo" src="images/logo.png" style="margin: 0;">
+					    </a>
+		<div style="">
+				    	<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="fundamentalsBtn">
+					        <a href="fundamentals.html"><font color="#ffeeee"> FUNDAMENTALS </font></a>
+					    </button>
+						</div>
+						<div>
+					    <button class="cssButton_roundedMed cssButton_lightBrown" id="finddrinksBtn">
+					        <a href="findadrink.html"><font color="#ffeeee"> &nbsp; FIND A DRINK &nbsp; </font>    </a>
+					    </button>
+						</div>
+					</div>
+					</div>
+						
+		</div>
+		<br>
+		  <div id="wrapper" style="margin-top: 180px;">
 
 <h1 class="ext_text" align="center">Coffee Fundamentals</h1>
 <p class="ext_text" align=center>This page offers educational resources for new coffee drinkers.</p><br>
@@ -193,51 +218,59 @@
 		<h3>Learn Coffee Terminology</h3>
 		<p align="center">Here you can find a listing of coffee terminology.</p>
 		<div id="terminology">
-			<h3>Caffeine</h3>
+			<h3 class="coffee-term">Caffeine</h3>
 			<div>
 				<p>
 				A stimulant which can temporarily ward off drowsiness and raise alertness.
 				</p>
 			</div>
-			<h3>Cappuccino</h3>
+			<h3 class="coffee-term">Cappuccino</h3>
 			<div>
 				<p>
 				A coffee drink that is prepared with hot milk, steamed milk foam, and espresso.
 				</p>
 				<img src="images/resultImgs/cappuccino.png" />
 			</div>
-			<h3>Coffee</h3>
+			<h3 class="coffee-term">Coffee</h3>
 			<div>
 				<p>
 				A brewed beverage which is prepared from the roasted seeds of the Coffea plant.
 				</p>
 			</div>
-			<h3>Coffee Bean</h3>
+			<h3 class="coffee-term">Coffee Bean</h3>
 			<div>
 				<p>
 				The seed of a coffee plant. Unprocessed coffee beans are roasted in the process of preparing coffee.
 				</p>
 			</div>
-			<h3>Coffee Grounds</h3>
+			<h3 class="coffee-term">Coffee Grounds</h3>
 			<div>
 				<p>
 				Coffee beans that have been crushed.  These are used with a coffeemaker to brew coffee.  The consistency of the
 				coffee grounds effects the type of drink that will be brewed.
 				</p>
 			</div>
-			<h3>Coffeemaker</h3>
+			<h3 class="coffee-term">Coffeemaker</h3>
 			<div>
 				<p>
 				An appliance which is used to brew coffee.  This machine allows for the preparation of coffee without having to boil water in a separate container.  Also known as a "Coffee Machine".
 				</p>
+				<img src="images/coffeemaker.jpg" />
 			</div>
-			<h3>Demitasse</h3>
+			<h3 class="coffee-term">Decaf</h3>
+			<div>
+				<p>
+				A term used to refer to coffee drinks whose caffeine content has been removed.  Decaf coffee may still contain some caffeine content,
+				but it is a very small quantity compared to regular coffee.
+				</p>
+			</div>
+			<h3 class="coffee-term">Demitasse</h3>
 			<div>
 				<p>
 				A small cup which can typically hold about 2-3 fluid ounces.  A Demitasse is most commonly used for serving espresso and turkish coffee.
 				</p>
 			</div>
-			<h3>Espresso</h3>
+			<h3 class="coffee-term">Espresso</h3>
 			<div>
 				<p>
 				A concentrated drink which is brewed by forcing a small amount of boiling water through ground coffee beans.  Espresso is typically 
@@ -246,18 +279,35 @@
 				</p>
 				<img src="images/resultImgs/espresso.png" />
 			</div>
-			<h3>Espresso Machine</h3>
+			<h3 class="coffee-term">Espresso Machine</h3>
 			<div>
 				<p>
 				A machine specifically designed for the preparation of espresso.  Because espresso requires specific conditions with regard to pressure,
 				this specialized machine must be used to brew espresso as opposed to a regular coffeemaker.
 				</p>
 			</div>
-			<h3>Filter</h3>
+			<h3 class="coffee-term">Filter</h3>
 			<div>
 				<p>
 				A utensil used in coffee brewing to remove organic components. Filters are most often made with disposable paper, but can also be made of stainless steel for brewing certain types of coffee drinks.
 				</p>
+				<img src="images/coffeefilters.jpg" />
+			</div>
+			<h3 class="coffee-term">Iced Coffee</h3>
+			<div>
+				<p>
+				A coffee drink that is prepared by pouring brewed coffee into ice or ice-cold milk.
+				</p>
+				<img src="images/resultImgs/iced coffee.png" />
+			</div>
+			<h3 class="coffee-term">Latte</h3>
+			<div>
+				<p>
+				A coffee drink prepared with steamed milk and espresso. There are generally two main varients of this drink: a <i>Caffe Latte</i>
+				and a <i>Latte Macchiato</i>.  In a Caffe Latte, milk is added to espresso to prepare the drink.  In a Latte Macchiato it is the
+				reverse: a smaller amount of espresso is added to milk.
+				</p>
+				<img src="images/resultImgs/caffe latte.png" />
 			</div>
 		</div>
 	</div>
