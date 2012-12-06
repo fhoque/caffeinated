@@ -92,7 +92,7 @@
 			"drinkName" 	:	"Caffe Macchiato",
 			"drinkSize" : "small",
 			"caffeine" 	: "large",
-			"milk" 		: "none",
+			"milk" 		: "small",
 			"temp" 		: "hot",
 			"equip" 	: ["Dowleh","Demitasse"],
 			"slideshow" : "",
