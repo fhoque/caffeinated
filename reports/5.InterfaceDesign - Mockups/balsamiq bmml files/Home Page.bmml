@@ -1,0 +1,98 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="838" measuredH="531" mockupW="716" mockupH="531">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="129" y="78" w="69" h="63" measuredW="300" measuredH="300" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%227%2C78%2C76%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%223%22/%3E</map>
+        <size>32</size>
+        <src>http%3A//aboutfoursquare.com/wp-content/uploads/2011/01/coffee.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="201" y="86" w="41" h="34" measuredW="39" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Get</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="122" y="0" w="716" h="531" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Home%20-%20Get%20Me%20Caffeinated%21%0Ahttp%3A//getmecaffeinated.com/</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="__group__" x="235" y="178" w="471" h="119" measuredW="471" measuredH="119" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="471" h="119" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="20"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::VCurly" x="81" y="29" w="338" h="60" measuredW="180" measuredH="140" zOrder="1" locked="false" isInGroup="20">
+          <controlProperties>
+            <text>Find%20the%20beverage%20for%20you%20and%20how%20to%20brew%20it%2C%20too%21</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Label" x="200" y="103" w="182" h="38" measuredW="170" measuredH="37" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2278%2C103%2C260%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2222%22/%3E</map>
+        <size>28</size>
+        <text>Caffeinated%21</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Label" x="238" y="86" w="38" h="34" measuredW="34" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Me</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::IconLabel" x="277" y="365" w="80" h="-1" measuredW="48" measuredH="69" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <href>Fundamentals%26bm%3BFundamentals.bmml%26bm%3BFundamentals.bmml%26bm%3BFundamentals.bmml</href>
+        <icon>GearIcon%7Clarge</icon>
+        <labelPosition>bottom</labelPosition>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22155%2C365%2C235%2C434%22%20href%3D%22Fundamentals.bmml%22%20alt%3D%22Fundamentals%22%20id%3D%2224%22/%3E</map>
+        <state>up</state>
+        <text>%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::IconLabel" x="641" y="365" w="140" h="-1" measuredW="136" measuredH="69" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <href>Experts%26bm%3BExperts.bmml%26bm%3BExperts.bmml%26bm%3BExperts.bmml</href>
+        <icon>ThumbsUpIcon%7Clarge</icon>
+        <labelPosition>bottom</labelPosition>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22519%2C365%2C659%2C434%22%20href%3D%22Experts.bmml%22%20alt%3D%22Experts%22%20id%3D%2225%22/%3E</map>
+        <state>up</state>
+        <text>I%27m%20an%20Advanced%20User%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::IconLabel" x="531" y="365" w="95" h="-1" measuredW="93" measuredH="69" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <href>Beginners%26bm%3BBeginners.bmml%26bm%3BBeginners.bmml%26bm%3BBeginners.bmml</href>
+        <icon>EmoticonIcon%7Clarge</icon>
+        <labelPosition>bottom</labelPosition>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22409%2C365%2C504%2C434%22%20href%3D%22Beginners.bmml%22%20alt%3D%22Beginners%22%20id%3D%2226%22/%3E</map>
+        <state>up</state>
+        <text>I%27m%20a%20Beginner%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="568" y="335" w="-1" h="-1" measuredW="128" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Find%20a%20Coffee%20Recipe</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Label" x="235" y="335" w="-1" h="-1" measuredW="165" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Learn%20Coffee%20Fundamentals</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,114 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="838" measuredH="531" mockupW="716" mockupH="531">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Title" x="317" y="184" w="-1" h="-1" measuredW="425" measuredH="50" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Beginner%27s%20Questionaire</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="205" y="145" w="-1" h="-1" measuredW="116" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%2C</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C148%2C125%2C169%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%221_0%22/%3E%0A</map>
+        <text>Home%2C%20Beginners</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="198" y="249" w="-1" h="-1" measuredW="212" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Do%20you%20like%20hot%20drinks%2C%20or%20cold%20drinks%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::CheckBox" x="440" y="248" w="-1" h="-1" measuredW="46" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hot</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::CheckBox" x="519" y="248" w="-1" h="-1" measuredW="52" measuredH="22" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cold</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="198" y="337" w="-1" h="-1" measuredW="258" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Rank%20what%20is%20most%20important%20to%20you%20in%20a%20drink%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::List" x="198" y="358" w="562" h="87" measuredW="100" measuredH="126" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1.%20Taste%0A2.%20Caffeine%0A...</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="122" y="0" w="716" h="531" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Beginner%27s%20Questionaire%20-%20Get%20Me%20Caffeinated%21%0Ahttp%3A//getmecaffeinated.com/beginners</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="198" y="285" w="-1" h="-1" measuredW="203" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>How%20sweet%20do%20you%20like%20your%20drinks%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::CheckBox" x="416" y="284" w="-1" h="-1" measuredW="54" measuredH="22" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Very</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::CheckBox" x="486" y="284" w="-1" h="-1" measuredW="86" measuredH="22" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Somewhat</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::CheckBox" x="586" y="284" w="-1" h="-1" measuredW="77" measuredH="22" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Not%20very</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::CheckBox" x="678" y="284" w="-1" h="-1" measuredW="88" measuredH="22" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Don%27t%20Care</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="663" y="460" w="-1" h="-1" measuredW="108" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Results%26bm%3BResults.bmml%26bm%3BResults.bmml%26bm%3BResults.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22541%2C460%2C649%2C487%22%20href%3D%22Results.bmml%22%20alt%3D%22Results%22%20id%3D%2213%22/%3E</map>
+        <text>Find%20my%20drinks%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Image" x="129" y="78" w="69" h="63" measuredW="300" measuredH="300" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%227%2C78%2C76%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2214%22/%3E</map>
+        <size>32</size>
+        <src>http%3A//aboutfoursquare.com/wp-content/uploads/2011/01/coffee.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="201" y="86" w="41" h="34" measuredW="39" measuredH="28" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Get</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="200" y="103" w="182" h="38" measuredW="170" measuredH="37" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2278%2C103%2C260%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2216%22/%3E</map>
+        <size>28</size>
+        <text>Caffeinated%21</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="238" y="86" w="38" h="34" measuredW="34" measuredH="28" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Me</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

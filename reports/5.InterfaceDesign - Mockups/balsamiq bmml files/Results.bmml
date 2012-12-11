@@ -1,0 +1,122 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="860" measuredH="531" mockupW="738" mockupH="531">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="122" y="0" w="716" h="531" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Directions%20-%20Get%20Me%20Caffeinated%21%0Ahttp%3A//getmecaffeinated.com/directions</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="428" y="184" w="-1" h="-1" measuredW="135" measuredH="50" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Results</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="428" y="234" w="432" h="17" measuredW="301" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>The%20following%20coffee%20drinks%20match%20your%20preferences%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Button" x="205" y="295" w="177" h="24" measuredW="168" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <icon>HomeIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C295%2C260%2C319%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2217%22/%3E</map>
+        <text>Return%20to%20Home%20Page</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Canvas" x="428" y="260" w="362" h="245" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::IconLabel" x="437" y="348" w="59" h="-1" measuredW="54" measuredH="65" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Directions%26bm%3BDirections.bmml%26bm%3BDirections.bmml%26bm%3BDirections.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22315%2C348%2C374%2C413%22%20href%3D%22Directions.bmml%22%20alt%3D%22Directions%22%20id%3D%2223%22/%3E</map>
+        <size>10</size>
+        <text>Cappuccino</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::IconLabel" x="437" y="436" w="72" h="-1" measuredW="69" measuredH="65" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Directions%26bm%3BDirections.bmml%26bm%3BDirections.bmml%26bm%3BDirections.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22315%2C436%2C387%2C501%22%20href%3D%22Directions.bmml%22%20alt%3D%22Directions%22%20id%3D%2224%22/%3E</map>
+        <size>10</size>
+        <text>Espresso%20shot</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::IconLabel" x="437" y="267" w="61" h="-1" measuredW="57" measuredH="65" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Directions%26bm%3BDirections.bmml%26bm%3BDirections.bmml%26bm%3BDirections.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22315%2C267%2C376%2C332%22%20href%3D%22Directions.bmml%22%20alt%3D%22Directions%22%20id%3D%2225%22/%3E</map>
+        <size>10</size>
+        <text>Caffe%20Latte</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Label" x="509" y="285" w="269" h="40" measuredW="377" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20frothy%20milk%20and%20espresso%20beverage.%20Medium%20caffeine%20content.%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="509" y="364" w="256" h="21" measuredW="306" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20strong%20espresso%20+%20milk%20beverage.%20%20High%20caffeine.%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Label" x="509" y="448" w="271" h="44" measuredW="430" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pure%2C%20unadultered%20liquid%20caffeine.%20100%25%20the%20stuff.%20%20Not%20for%20the%20feint%20of%20heart.</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Button" x="205" y="260" w="177" h="24" measuredW="166" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <href>Experts%26bm%3BExperts.bmml%26bm%3BExperts.bmml%26bm%3BExperts.bmml</href>
+        <icon>HeartIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C260%2C260%2C284%22%20href%3D%22Experts.bmml%22%20alt%3D%22Experts%22%20id%3D%2229%22/%3E</map>
+        <text>Try%20again%20%28start%20over%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="129" y="78" w="69" h="63" measuredW="300" measuredH="300" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%227%2C78%2C76%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2230%22/%3E</map>
+        <size>32</size>
+        <src>http%3A//aboutfoursquare.com/wp-content/uploads/2011/01/coffee.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="201" y="86" w="41" h="34" measuredW="39" measuredH="28" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Get</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Label" x="200" y="103" w="182" h="38" measuredW="170" measuredH="37" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2278%2C103%2C260%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2232%22/%3E</map>
+        <size>28</size>
+        <text>Caffeinated%21</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Label" x="238" y="86" w="38" h="34" measuredW="34" measuredH="28" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Me</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="205" y="145" w="-1" h="-1" measuredW="193" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%2CExperts%26bm%3BExperts.bmml%26bm%3BExperts.bmml%26bm%3BExperts.bmml%2CDirections%26bm%3BDirections.bmml%26bm%3BDirections.bmml%26bm%3BDirections.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C148%2C125%2C169%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2234_0%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22137%2C148%2C203%2C169%22%20href%3D%22Experts.bmml%22%20alt%3D%22Experts%22%20id%3D%2234_1%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22215%2C148%2C280%2C169%22%20href%3D%22Directions.bmml%22%20alt%3D%22Directions%22%20id%3D%2234_2%22/%3E%0A</map>
+        <text>Home%2C%20Advanced%2C%20Directions</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

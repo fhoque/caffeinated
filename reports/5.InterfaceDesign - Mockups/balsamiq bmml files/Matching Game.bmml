@@ -1,0 +1,143 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="838" measuredH="600" mockupW="716" mockupH="600">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Title" x="272" y="184" w="417" h="-1" measuredW="278" measuredH="50" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Matching%20Game</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="205" y="145" w="-1" h="-1" measuredW="248" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%2CFundamentals%26bm%3BFundamentals.bmml%26bm%3BFundamentals.bmml%26bm%3BFundamentals.bmml%2C</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C148%2C125%2C169%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%223_0%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22137%2C148%2C225%2C169%22%20href%3D%22Fundamentals.bmml%22%20alt%3D%22Fundamentals%22%20id%3D%223_1%22/%3E%0A</map>
+        <text>Home%2C%20Fundamentals%2C%20Matching%20Game</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="122" y="0" w="716" h="600" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Matching%20Game%20-%20Get%20Me%20Caffeinated%21%0Ahttp%3A//getmecaffeinated.com/game</text>
+      </controlProperties>
+    </control>
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Button" x="198" y="249" w="202" h="28" measuredW="194" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <href>Terminology%26bm%3BTerminology.bmml%26bm%3BTerminology.bmml%26bm%3BTerminology.bmml</href>
+        <icon>PencilIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2276%2C249%2C278%2C277%22%20href%3D%22Terminology.bmml%22%20alt%3D%22Terminology%22%20id%3D%2293%22/%3E</map>
+        <state>up</state>
+        <text>Learn%20Coffee%20Terminology</text>
+      </controlProperties>
+    </control>
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::Button" x="198" y="293" w="202" h="28" measuredW="202" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <href>Test%20your%20knowledge%26bm%3BTest%20your%20knowledge.bmml%26bm%3BTest%20your%20knowledge.bmml%26bm%3BTest%20your%20knowledge.bmml</href>
+        <icon>LightBulbIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2276%2C293%2C278%2C321%22%20href%3D%22Test%2520your%2520knowledge.bmml%22%20alt%3D%22Test%20your%20knowledge%22%20id%3D%2294%22/%3E</map>
+        <text>Test%20your%20coffee%20knowledge</text>
+      </controlProperties>
+    </control>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Button" x="198" y="339" w="202" h="28" measuredW="169" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>16777215</color>
+        <href>Matching%20Game%26bm%3BMatching%20Game.bmml%26bm%3BMatching%20Game.bmml%26bm%3BMatching%20Game.bmml</href>
+        <icon>FlickrIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2276%2C339%2C278%2C367%22%20href%3D%22Matching%2520Game.bmml%22%20alt%3D%22Matching%20Game%22%20id%3D%2295%22/%3E</map>
+        <state>selected</state>
+        <text>Play%20a%20matching%20game</text>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Button" x="198" y="424" w="202" h="28" measuredW="176" measuredH="30" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <icon>HomeIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2276%2C424%2C278%2C452%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2296%22/%3E</map>
+        <text>Return%20to%20Home%20Page</text>
+      </controlProperties>
+    </control>
+    <control controlID="98" controlTypeID="com.balsamiq.mockups::Image" x="129" y="78" w="69" h="63" measuredW="300" measuredH="300" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%227%2C78%2C76%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2298%22/%3E</map>
+        <size>32</size>
+        <src>http%3A//aboutfoursquare.com/wp-content/uploads/2011/01/coffee.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="99" controlTypeID="com.balsamiq.mockups::Label" x="201" y="86" w="41" h="34" measuredW="39" measuredH="28" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Get</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="100" controlTypeID="com.balsamiq.mockups::Label" x="200" y="103" w="182" h="38" measuredW="170" measuredH="37" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2278%2C103%2C260%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%22100%22/%3E</map>
+        <size>28</size>
+        <text>Caffeinated%21</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::Label" x="238" y="86" w="38" h="34" measuredW="34" measuredH="28" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Me</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="103" controlTypeID="com.balsamiq.mockups::Button" x="198" y="382" w="202" h="28" measuredW="189" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>16777215</color>
+        <href>Beginners%26bm%3BBeginners.bmml%26bm%3BBeginners.bmml%26bm%3BBeginners.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2276%2C382%2C278%2C410%22%20href%3D%22Beginners.bmml%22%20alt%3D%22Beginners%22%20id%3D%22103%22/%3E</map>
+        <state>disabled</state>
+        <text>Get%20started%20learning%20a%20recipe</text>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::Canvas" x="430" y="244" w="353" h="288" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Image" x="671" y="425" w="106" h="90" measuredW="167" measuredH="167" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <src>https%3A//encrypted-tbn2.gstatic.com/images%3Fq%3Dtbn%3AANd9GcQxRdw2taYasZsIP7k5nl1UZmWEw0NS9X4Vm6POPyv-Oati8a0Q</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::Image" x="437" y="425" w="106" h="90" measuredW="224" measuredH="224" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <src>https%3A//encrypted-tbn2.gstatic.com/images%3Fq%3Dtbn%3AANd9GcTaC2kLIJCAGO6aH4xz2zFnV0Ip2-xjtXWzh22yzFNB2V2QGMrs</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Image" x="554" y="425" w="106" h="90" measuredW="231" measuredH="218" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <src>https%3A//encrypted-tbn1.gstatic.com/images%3Fq%3Dtbn%3AANd9GcQlYDlutUg9N0R2dpnnzqMTCZO_DvIHvDQGmuTJFgRXC3yPo8yHSg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Label" x="453" y="388" w="316" h="36" measuredW="318" measuredH="28" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Which%20of%20these%20is%20a%20demitasse%20cup%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Image" x="542" y="259" w="123" h="111" measuredW="123" measuredH="115" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>https%3A//encrypted-tbn0.gstatic.com/images%3Fq%3Dtbn%3AANd9GcQJO2IMYbYUWkQTwDwVYYY1ceyLP33QZLuUFHBXm2K2dwQgTV-tGg</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

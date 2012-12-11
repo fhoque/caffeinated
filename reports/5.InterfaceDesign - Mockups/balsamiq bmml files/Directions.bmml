@@ -1,0 +1,171 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="856" measuredH="600" mockupW="734" mockupH="600">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="205" y="145" w="-1" h="-1" measuredW="193" measuredH="24" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%2CExperts%26bm%3BExperts.bmml%26bm%3BExperts.bmml%26bm%3BExperts.bmml%2CDirections%26bm%3BDirections.bmml%26bm%3BDirections.bmml%26bm%3BDirections.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C148%2C125%2C169%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%220_0%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22137%2C148%2C203%2C169%22%20href%3D%22Experts.bmml%22%20alt%3D%22Experts%22%20id%3D%220_1%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22215%2C148%2C280%2C169%22%20href%3D%22Directions.bmml%22%20alt%3D%22Directions%22%20id%3D%220_2%22/%3E%0A</map>
+        <text>Home%2C%20Advanced%2C%20Directions</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="398" y="184" w="-1" h="-1" measuredW="178" measuredH="50" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Directions</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="443" y="245" w="-1" h="-1" measuredW="309" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>The%20following%20coffee%20drink%20matches%20your%20preferences%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="443" y="312" w="-1" h="-1" measuredW="72" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Ingredients</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::List" x="443" y="338" w="274" h="87" measuredW="100" measuredH="126" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ingredient%201%0AIngredient%202%0A...</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Link" x="577" y="339" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Where%20can%20I%20find%20this%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22455%2C339%2C585%2C360%22%20href%3D%22Where%2520can%2520I%2520find%2520this.bmml%22%20alt%3D%22Where%20can%20I%20find%20this%22%20id%3D%229%22/%3E</map>
+        <text>Where%20can%20I%20find%20this%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Link" x="577" y="360" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Where%20can%20I%20find%20this%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22455%2C360%2C585%2C381%22%20href%3D%22Where%2520can%2520I%2520find%2520this.bmml%22%20alt%3D%22Where%20can%20I%20find%20this%22%20id%3D%2210%22/%3E</map>
+        <text>Where%20can%20I%20find%20this%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="443" y="447" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Equipment</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::List" x="443" y="473" w="274" h="81" measuredW="100" measuredH="126" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Equipment%201%0AEquipment%202%0A...</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Link" x="577" y="474" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Where%20can%20I%20find%20this%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22455%2C474%2C585%2C495%22%20href%3D%22Where%2520can%2520I%2520find%2520this.bmml%22%20alt%3D%22Where%20can%20I%20find%20this%22%20id%3D%2216%22/%3E</map>
+        <text>Where%20can%20I%20find%20this%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Link" x="577" y="495" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Where%20can%20I%20find%20this%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml%26bm%3BWhere%20can%20I%20find%20this.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22455%2C495%2C585%2C516%22%20href%3D%22Where%2520can%2520I%2520find%2520this.bmml%22%20alt%3D%22Where%20can%20I%20find%20this%22%20id%3D%2217%22/%3E</map>
+        <text>Where%20can%20I%20find%20this%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="122" y="0" w="716" h="600" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Drink%20Name%20Directions%20-%20Get%20Me%20Caffeinated%21%0Ahttp%3A//getmecaffeinated.com/drinkname-directions</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::IconLabel" x="686" y="183" w="-1" h="-1" measuredW="61" measuredH="45" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Print%26bm%3BPrint.bmml%26bm%3BPrint.bmml%26bm%3BPrint.bmml</href>
+        <icon>PrintIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22564%2C183%2C625%2C228%22%20href%3D%22Print.bmml%22%20alt%3D%22Print%22%20id%3D%2222%22/%3E</map>
+        <text>Easy%20Print</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::IconLabel" x="599" y="183" w="-1" h="-1" measuredW="72" measuredH="45" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Preparation%26bm%3BPreparation.bmml%26bm%3BPreparation.bmml%26bm%3BPreparation.bmml</href>
+        <icon>HandPointIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22477%2C183%2C549%2C228%22%20href%3D%22Preparation.bmml%22%20alt%3D%22Preparation%22%20id%3D%2223%22/%3E</map>
+        <text>Preparation</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Button" x="205" y="294" w="201" h="24" measuredW="168" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <icon>HomeIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C294%2C284%2C318%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2234%22/%3E</map>
+        <text>Return%20to%20Home%20Page</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="443" y="266" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5B%20DRINK%20NAME%20%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Button" x="205" y="257" w="201" h="24" measuredW="176" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <href>Results%26bm%3BResults.bmml%26bm%3BResults.bmml%26bm%3BResults.bmml</href>
+        <icon>LeftFillTriangleIcon%7Cxsmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C257%2C284%2C281%22%20href%3D%22Results.bmml%22%20alt%3D%22Results%22%20id%3D%2239%22/%3E</map>
+        <text>Return%20to%20beverage%20list</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Image" x="134" y="78" w="69" h="63" measuredW="300" measuredH="300" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2212%2C78%2C81%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2240%22/%3E</map>
+        <size>32</size>
+        <src>http%3A//aboutfoursquare.com/wp-content/uploads/2011/01/coffee.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Label" x="206" y="86" w="41" h="34" measuredW="39" measuredH="28" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Get</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="205" y="103" w="182" h="38" measuredW="170" measuredH="37" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>Home%20Page%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml%26bm%3BHome%20Page.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2283%2C103%2C265%2C141%22%20href%3D%22Home%2520Page.bmml%22%20alt%3D%22Home%20Page%22%20id%3D%2242%22/%3E</map>
+        <size>28</size>
+        <text>Caffeinated%21</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="243" y="86" w="38" h="34" measuredW="34" measuredH="28" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>20</size>
+        <text>Me</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="__group__" x="767" y="199" w="89" h="275" measuredW="89" measuredH="275" zOrder="16" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Arrow" x="0" y="0" w="85" h="103" measuredW="150" measuredH="100" zOrder="0" locked="false" isInGroup="44">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="73" y="114" w="16" h="161" measuredW="21" measuredH="161" zOrder="1" locked="false" isInGroup="44">
+          <controlProperties>
+            <align>center</align>
+            <href>Preparation%26bm%3BPreparation.bmml%26bm%3BPreparation.bmml%26bm%3BPreparation.bmml</href>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22718%2C313%2C734%2C474%22%20href%3D%22Preparation.bmml%22%20alt%3D%22Preparation%22%20id%3D%221%22/%3E</map>
+            <text>Scroll%20Down%20for%20Preparation</text>
+            <textOrientation>down</textOrientation>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

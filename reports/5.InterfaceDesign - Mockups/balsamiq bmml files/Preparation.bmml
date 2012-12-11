@@ -1,0 +1,43 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="838" measuredH="531" mockupW="716" mockupH="531">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::CoverFlow" x="205" y="219" w="578" h="198" measuredW="493" measuredH="198" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::StickyNote" x="445" y="262" w="95" h="112" measuredW="109" measuredH="123" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>11</size>
+        <text>Preparation%20step%20for%20this%20particular%20drink%20will%20go%20here.</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="122" y="0" w="716" h="531" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Drink%20Name%20Directions%20-%20Get%20Me%20Caffeinated%21%0Ahttp%3A//getmecaffeinated.com/drinkname-directions%23preparation</text>
+        <value>56</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="683" y="453" w="-1" h="-1" measuredW="100" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>Directions%26bm%3BDirections.bmml%26bm%3BDirections.bmml%26bm%3BDirections.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22561%2C456%2C635%2C477%22%20href%3D%22Directions.bmml%22%20alt%3D%22Directions%22%20id%3D%227_0%22/%3E%0A</map>
+        <text>Back%20to%20top</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::List" x="445" y="72" w="274" h="81" measuredW="100" measuredH="126" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Equipment%202%0A...</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Link" x="578" y="72" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Where%20can%20I%20find%20this%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="445" y="190" w="-1" h="-1" measuredW="75" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Preparation</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::MediaControls" x="425" y="426" w="-1" h="-1" measuredW="110" measuredH="36" zOrder="7" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
