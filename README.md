@@ -1,7 +1,7 @@
 <h1>Final Submission</h1>
 <a href="http://fhoque.github.com/caffeinated/proj/index.html"> Final Project - Caffeinated Tool</a><br />
 <a href="http://fhoque.github.com/caffeinated/slides/index.html">Presentation Slides - User Interface Development & Implementation</a><br />
-<a href="http://fhoque.github.com/caffeinated/slides.pdf">Presentation PDF - User Interface Development & Implementation</a>
+<a href="http://fhoque.github.com/caffeinated/slides.pdf">Presentation PDF</a>
 
 <h1>Statement of Intent</h1>
 
